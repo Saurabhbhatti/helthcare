@@ -1,0 +1,87 @@
+.para-container {
+    background-color: rgb(251, 251, 243);
+    font-family: serif;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 0;
+  }
+  
+  .para-text {
+    line-height: 1.5;
+    color:rgb(9,55,31);
+    font-size: 50px;
+    margin-top: 0px;
+    padding-top: 100px;
+  }
+  
+  .para-text-item {
+    color: rgb(9,55,31);
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 30em;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  
+  .para-text-item span {
+    display: block;
+  }
+  
+
+  /*  sticky  */
+
+  /* .containersticky{
+    border: 2px solid rebeccapurple;
+    margin: 10px 10px;
+    display: flex;
+  
+  }
+  
+    .sticky{
+      background-image: url('../../Assets/Image/Hand-mobile.jpeg');
+      width: 526px;
+      height: 500px;
+      border: 2px solid red;
+      margin-left: 65px;
+      position: sticky;
+      z-index: -1;
+    }
+  
+  
+  .image {
+    
+    flex: 1;
+  }
+  
+  .image img {
+    width: 100%;
+    position: sticky;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    opacity: 0; 
+   
+  }
+  
+  .overlay.visible {
+    background-color: rgba(0, 0, 0, 0.5); 
+    opacity: 1;
+  }
+  
+  .description {
+    flex: 1;
+  }
+   */

@@ -1,0 +1,68 @@
+.Container {
+  display: flex;
+  font-family: serif;
+}
+
+.box-first {
+  width: 628px;
+  min-height: 459px;
+  position: absolute;
+  top: 330px;
+  left: 30px;
+  background-color: rgb(234, 242, 246);
+  animation: slideIn 2s ease-in-out; 
+  color: rgb(9,55,31);
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%); 
+  }
+  100% {
+    transform: translateX(0); 
+  }
+}
+
+
+.spwidget-button{
+  display: inline-block;
+  padding: 12px 24px;
+  color: #fff !important;
+  background: rgb(9,55,31);
+  border: 0;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.spwidget-button:hover {
+  background: #d15913;
+}
+
+.spwidget-button:active {
+  color: rgba(255, 255, 255, .75) !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .15) inset;
+}
+
+.box-middle {
+  flex: 0.43;
+  background-color: rgb(234, 242, 246);
+}
+
+.box-last {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+.spwidget-button-wrapper {
+  text-align: center;
+}

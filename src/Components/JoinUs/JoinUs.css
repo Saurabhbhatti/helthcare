@@ -1,0 +1,45 @@
+.us-component {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(234, 242, 246);
+  font-family: serif;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.image-container {
+  margin-right: 80px; 
+  padding-top: 50px; 
+  padding-bottom: 50px;
+}
+
+.content-container {
+  padding-bottom: 50px;
+  text-align: center; 
+}
+
+.button-container {
+  margin-top: 20px; 
+}
+
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    width: auto;
+  }
+
+  .image-container {
+    padding: 0;
+    margin-bottom: 20px; 
+
+  .content-container {
+    padding-bottom: 30px; 
+  }
+}
+}
