@@ -1,8 +1,8 @@
 import React from 'react';
 import './Appoinment.css';
-import card1 from '../../Assets/Image/card1-img1.webp';
-import Card2 from '../../Assets/Image/card1-img2.webp';
-import Card3 from '../../Assets/Image/card1-img3.webp';
+import card1 from '../../Assets/Image/dct1.jpg';
+import Card2 from '../../Assets/Image/dct2.jpg';
+import Card3 from '../../Assets/Image/dct3.jpg';
 import AppointmentRequestWidget from './Appoinment';
 
 const AppoinmentCard = ({ imageUrl, description, scopeId, scopeUrl, applicationId }) => {
@@ -27,21 +27,21 @@ const AppoinmentCards = () => {
     const cardsData = [
         {
             imageUrl: card1,
-            description: 'Describe one of your services',
+            description: 'Sandrine Ndetah – Nurse Practitioner',
             scopeId: 'b343f131-5bbc-4bb1-bfa4-15530b7fa1fe',
             scopeUrl: 'sandy-ndetah',
             applicationId: '7c72cb9f9a9b913654bb89d6c7b4e71a77911b30192051da35384b4d0c6d505b'
         },
         {
             imageUrl: Card2,
-            description: 'Describe one of your services',
+            description: 'Jaimee Ussery – Nurse Practitioner',
             scopeId: '7c019d46-6fb2-4a42-9d25-253151e62ac2',
             scopeUrl: 'jaimee-ussery5125',
             applicationId: '7c72cb9f9a9b913654bb89d6c7b4e71a77911b30192051da35384b4d0c6d505b'
         },
         {
             imageUrl: Card3,
-            description: 'Describe one of your services',
+            description: 'Dawn Coston – Nurse Practitioner',
             scopeId: '153bd7d5-bb4a-4a78-871f-e888c7d3da14',
             scopeUrl: 'dawn-coston6627',
             applicationId: '7c72cb9f9a9b913654bb89d6c7b4e71a77911b30192051da35384b4d0c6d505b'
