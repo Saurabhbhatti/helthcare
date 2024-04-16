@@ -11,7 +11,7 @@ const Card = () => {
       <div className="row cards">
         <div className="col-lg-3 col-md-6 col-sm-12 mb-4">
           <div className="card">
-            <img src={img1} alt="img1" className="card-img-top" />
+            <img src={img1} alt="img1" className="card-img-top custom-img" />
             <div className="card-body">
               <h5 className="card-title">DR. Prateek Mehta</h5>
               <p className="card-text">
@@ -23,7 +23,7 @@ const Card = () => {
         </div>
         <div className="col-lg-3 col-md-6 col-sm-12 mb-4">
           <div className="card">
-            <img src={img2} alt="img2" className="card-img-top" />
+            <img src={img2} alt="img2" className="card-img-top custom-img" />
             <div className="card-body">
               <h5 className="card-title">Evelyn Wright, M.D</h5>
               <p className="card-text">
@@ -35,7 +35,7 @@ const Card = () => {
         </div>
         <div className="col-lg-3 col-md-6 col-sm-12 mb-4">
           <div className="card">
-            <img src={img3} alt="img3" className="card-img-top" />
+            <img src={img3} alt="img3" className="card-img-top custom-img" />
             <div className="card-body">
               <h5 className="card-title">Jenna Cadwell, M.D</h5>
               <p className="card-text">
@@ -47,7 +47,7 @@ const Card = () => {
         </div>
         <div className="col-lg-3 col-md-6 col-sm-12 mb-4">
           <div className="card">
-            <img src={img4} alt="img4" className="card-img-top" />
+            <img src={img4} alt="img4" className="card-img-top custom-img" />
             <div className="card-body">
               <h5 className="card-title">David Wayne, M.D.</h5>
               <p className="card-text">
