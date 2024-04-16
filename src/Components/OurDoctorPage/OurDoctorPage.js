@@ -44,7 +44,7 @@ const OurDoctorPage = () => {
             <Card />
             <Cards />
             <Paragraphs/>
-            <Book />
+            <Book/>
             <AnchorCard />
             <JoinUs />
             <Footer />

@@ -10,11 +10,11 @@ const Container = () => {
             </div>
             <div className="right">
                 <h2>Initial Consultation</h2>
-                <p className='bookpara'>"Kickstart your weight loss journey with Off the Charts in just three steps! Begin by scheduling a consultation to discuss your goals and medical history." </p>
+                <p className='bookpara'>"Kickstart your weight loss journey with <br/> Off the Charts in just three steps! Begin <br/> by scheduling a consultation to discuss <br/>  your goals and medical history." </p>
                 <h2>Personalized Treatment Plan</h2>
-                <p>Receive a personalized treatment plan including FDA-approved medications, telehealth consultations, and access to our renowned weight management programs.</p>
+                <p>Receive a personalized treatment plan <br/> including FDA-approved medications, <br/> telehealth consultations, and access to <br/>our renowned weight management programs.</p>
                 <h2>Implementation and Support</h2>
-                <p>Start seeing results after 30-60 days, supported by evidence-based protocols, nutritional guides, and as needed support from our experienced team. </p>
+                <p>Start seeing results after 30-60 days,<br/> supported by evidence-based <br/>protocols, nutritional guides, and as<br/> needed support from our experienced team. </p>
             </div>
         </div>
     );
