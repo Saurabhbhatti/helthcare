@@ -1,30 +1,23 @@
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
-import OurDoctorPage from './Components/OurDoctorPage/OurDoctorPage'
-import Paragraph from './Components/Paragraph1/Paragraph'
-import Card from './Components/Crad1/Card'
-import Cards from './Components/Card2/Cards'
-import Footer from './Components/Footer/Footer'
-import Header from './Components/Header/Header'
-import JoinUs from './Components/JoinUs/JoinUs'
-import Paragraphs from './Components/Paragraph2/Paragraphs';
-import AnchorCard from './Components/Card3/AnchorCard';
+import OurDoctorPage from './Components/OurDoctorPage/OurDoctorPage';
+import BookAppoointment from './Components/Appoinments/BookAppoinment';
+
 
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <main>
-        <OurDoctorPage />
-        <Paragraph />
-        <Card />
-        <Cards/>
-        <Paragraphs/>
-        <AnchorCard/>
-        <JoinUs/> 
-      </main>
-     <Footer />
-    </div>
+    <Router>
+      <div className="App">
+        <main>
+          <Routes>
+            <Route path='/' element={<OurDoctorPage />} />
+            <Route path='/appointments' element={<BookAppoointment/>} />
+          </Routes>
+        </main>
+      </div>
+    </Router>
   );
 }
 
