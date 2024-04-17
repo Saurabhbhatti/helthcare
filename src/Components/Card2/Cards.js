@@ -8,12 +8,14 @@ import Card4 from '../../Assets/Image/card1-img4.webp';
 const Card = ({ imageUrl, description }) => {
   return (
     <div className="card2">
-      <div className="card-image2">
-        <img src={imageUrl} alt="Card" />
-      </div>
-      <div className="card-description2">
-        <p>{description}</p>
-        <button className="card-button2">Learn More</button>
+      <div className="card-content">
+        <div className="card-image2">
+          <img src={imageUrl} alt="Card" />
+        </div>
+        <div className="card-description2">
+          <p>{description}</p>
+          <button className="card-button2">Learn More</button>
+        </div>
       </div>
     </div>
   );
@@ -39,11 +41,21 @@ const Cards = () => {
     },
   ];
 
+  const firstRowCards = cardsData.slice(0, 2);
+  const secondRowCards = cardsData.slice(2);
+
   return (
-    <div className="card-container2">
-      {cardsData.map((card, index) => (
-        <Card key={index} imageUrl={card.imageUrl} description={card.description} />
-      ))}
+    <div>
+      <div className="card-container2">
+        {firstRowCards.map((card, index) => (
+          <Card key={index} imageUrl={card.imageUrl} description={card.description} />
+        ))}
+      </div>
+      <div className="card-container2">
+        {secondRowCards.map((card, index) => (
+          <Card key={index + 2} imageUrl={card.imageUrl} description={card.description} />
+        ))}
+      </div>
     </div>
   );
 };

@@ -27,8 +27,8 @@ const OurDoctorPage = () => {
                         <span>
                             Off the Charts:<br /> Your Partner for <br /> Healthier Living
                         </span>
-                        <span className='spwidget-button-wrapper' style={{ display: 'block' }}>
-                            <Button variant='contained' onClick={handleClick}>Book Now</Button>
+                        <span  style={{ display: 'block' }}>
+                            <Button variant='contained' onClick={handleClick} style={{backgroundColor:'rgb(9 55 31)', borderRadius:'10px'}}>Book Now</Button>
                         </span>
                     </h1>
 
@@ -44,7 +44,7 @@ const OurDoctorPage = () => {
             <Card />
             <Cards />
             <Paragraphs/>
-            <Book />
+            <Book/>
             <AnchorCard />
             <JoinUs />
             <Footer />

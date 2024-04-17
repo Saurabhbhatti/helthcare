@@ -1,72 +1,68 @@
 import React from "react";
-import img1 from "../../Assets/Image/img1.jpg";
-import img2 from "../../Assets/Image/img2.jpg";
-import img3 from "../../Assets/Image/img3.jpg";
-import img4 from "../../Assets/Image/img4.jpg";
 import "../Crad1/Card.css";
+import { Box, Button, Paper, Typography } from "@mui/material";
+import doct1 from "../../Assets/Image/dct1.jpg";
+import doct2 from "../../Assets/Image/dct2.jpg";
+import doct3 from "../../Assets/Image/dct3.jpg";
+import AppointmentRequestWidget from "../Appoinments/Appoinment";
 
 const Card = () => {
   return (
-    <div className="container">
-      <div className="row cards">
-        <div className="col-lg-3 col-md-6 col-sm-12 mb-4">
-          <div className="card">
-            <img src={img1} alt="img1" className="card-img-top custom-img" />
-            <div className="card-body">
-              <h5 className="card-title">DR. Prateek Mehta</h5>
-              <p className="card-text">
-                I'm a paragraph. Click here to add your own text and edit me.
-                Let your users get to know you.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="col-lg-3 col-md-6 col-sm-12 mb-4">
-          <div className="card">
-            <img src={img2} alt="img2" className="card-img-top custom-img" />
-            <div className="card-body">
-              <h5 className="card-title">Evelyn Wright, M.D</h5>
-              <p className="card-text">
-                I'm a paragraph. Click here to add your own text and edit me.
-                Let your users get to know you.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="col-lg-3 col-md-6 col-sm-12 mb-4">
-          <div className="card">
-            <img src={img3} alt="img3" className="card-img-top custom-img" />
-            <div className="card-body">
-              <h5 className="card-title">Jenna Cadwell, M.D</h5>
-              <p className="card-text">
-                I'm a paragraph. Click here to add your own text and edit me.
-                Let your users get to know you.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="col-lg-3 col-md-6 col-sm-12 mb-4">
-          <div className="card">
-            <img src={img4} alt="img4" className="card-img-top custom-img" />
-            <div className="card-body">
-              <h5 className="card-title">David Wayne, M.D.</h5>
-              <p className="card-text">
-                I'm a paragraph. Click here to add your own text and edit me.
-                Let your users get to know you.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div style={{ height: 'auto', width: '100%' }}>
-          <h2 style={{ fontSize: '56px', textAlign: 'center' }}>
-            <span style={{ fontSize: '56px', color:'rgb(9,55,31)' }}>
-              Our Services
-            </span>
-          </h2>
-        </div>
-        <div>
-        </div>
-      </div>
+    <div>
+      <Box
+        sx={{
+          display: "flex",
+          flexWrap: "wrap",
+          alignContent: "center",
+          justifyContent: "center",
+          "& > :not(style)": {
+            m: 1,
+            width: 280,
+            height: 380,
+          },
+        }}
+      >
+        <Paper elevation={3} sx={{ border: "1px solid gray" }}>
+          <Box>
+            <img src={doct1} height='250px' width='100%' />
+            <Typography sx={{ marginTop: "4px",  marginBottom :'10px' }}>
+              Jaimee Ussery <br/> Nurse Practitioner
+            </Typography>
+            <AppointmentRequestWidget
+                    initialScopeId='7c019d46-6fb2-4a42-9d25-253151e62ac2'
+                    initialScopeUrl='jaimee-ussery5125'
+                    initialApplicationId="7c72cb9f9a9b913654bb89d6c7b4e71a77911b30192051da35384b4d0c6d505b"
+                />
+          </Box>
+        </Paper>
+
+        <Paper elevation={3} sx={{ border: "1px solid gray" }}>
+          <Box>
+            <img src={doct2} height='250px' width='100%'/>
+            <Typography sx={{ marginTop: "4px" , marginBottom :'10px' }}>
+              Sandrine Ndetah <br/> Nurse Practitioner
+            </Typography>
+            <AppointmentRequestWidget
+                    initialScopeId='b343f131-5bbc-4bb1-bfa4-15530b7fa1fe'
+                    initialScopeUrl='sandy-ndetah'
+                    initialApplicationId="7c72cb9f9a9b913654bb89d6c7b4e71a77911b30192051da35384b4d0c6d505b"
+                />
+          </Box>
+        </Paper>
+        <Paper elevation={3} sx={{ border: "1px solid gray" }}>
+          <Box>
+            <img src={doct3} height='250px' width='100%' />
+            <Typography sx={{ marginTop: "4px", marginBottom :'10px'}}>
+              Dawn Coston <br/> Nurse Practitioner
+            </Typography>
+            <AppointmentRequestWidget
+                    initialScopeId='153bd7d5-bb4a-4a78-871f-e888c7d3da14'
+                    initialScopeUrl='dawn-coston6627'
+                    initialApplicationId="7c72cb9f9a9b913654bb89d6c7b4e71a77911b30192051da35384b4d0c6d505b"
+                />
+          </Box>
+        </Paper>
+      </Box>
     </div>
   );
 };

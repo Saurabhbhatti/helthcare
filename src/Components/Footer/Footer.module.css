@@ -1,60 +1,57 @@
 .mainfooter {
-    height: auto;
-    width: auto;
-    background-color:rgb(9,55,31);
-    padding-left: 10px;
-  }
-  
-  .para {
-    font-family: serif;
-    font-size: 18px;
-    color:white;
-    line-height: 1.5;
-    padding-left: 150px;
-  }
+  height: auto;
+  width: auto;
+  background-color: rgb(9, 55, 31);
+  padding-left: 10px;
+}
 
-  .paratext{
-    font-family: serif;
-    font-size: 16px;
-    color:white;
-    line-height: 1.5;
-    padding-left: 150px;
-    padding-bottom: 20px;
-  }
+.para {
+  font-family: "rozha one", serif;
+  font-size: 18px;
+  color: white;
+  line-height: 1.5;
+  padding-left: 15px; 
+}
 
-  .menutext{
-    font-size: 18px;
-  }
-  
-  .footerflex {
-    display: flex;
-    flex-wrap: wrap; 
-  }
-  
-  .footerFlexContent {
-    padding-left: 80px;
-  }
-  
-  .footerFlexContentPad {
-    padding-left: 150px;
-  }
-  
-  .footerUL {
-    list-style-type: none;
-    font-size: 16px;
-    line-height: 2;
-    text-align: center; 
-    padding-top: 30px;
-  }
-  
-  a {
-    text-decoration: none;
-    color: white;
-  }
+.paratext {
+  font-family: "rozha one", serif;
+  font-size: 16px;
+  color: white;
+  line-height: 1.5;
+  padding-left: 15px; 
+  padding-bottom: 20px;
+}
 
-  .footer-btn{
-    margin-left: '10px';
-    border-radius:'100px';
-    width:'auto';
-    
-  }
+.footerflex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+}
+
+.footerFlexContent {
+  padding-left: 10px; 
+  padding-right: 10px; 
+  flex: 1; 
+  max-width: 200px; 
+}
+
+.footerFlexContentPad {
+  padding-left: 15px; 
+  padding-right: 15px; 
+  flex: 1; 
+  max-width: 200px; 
+}
+
+
+.footerUL {
+  list-style-type: none;
+  font-size: 16px;
+  line-height: 2;
+  text-align: center;
+  padding-top: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}

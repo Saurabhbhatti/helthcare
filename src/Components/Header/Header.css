@@ -4,9 +4,11 @@
   padding-top: 10px;
   padding-bottom: 10px;
   margin-top: 10px;
+  font-family: "rozha one", serif;
 }
 
 .navbar {
+  font-family: "rozha one", serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
