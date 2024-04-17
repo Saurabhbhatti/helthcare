@@ -3,10 +3,11 @@
     flex-wrap: wrap;
     padding-left: 50px;
     background-color: rgb(251, 251, 243);
+    font-family: "rozha one", serif;
   }
   
   .card4 {
-    width: 649px;
+    width: 549px;
     height: 283px;
     margin: 20px;
     border: 1px solid #ccc;
@@ -32,22 +33,24 @@
     color: black;
     position: relative;
     font-size: 20px;
-  }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
   
-  .card-button4 {
-    width: 142px;
-    height: 40px;
-    padding: 8px 16px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 14px;
-    position: absolute; 
-    bottom: 20px; 
-    right: 150px;
-  }
+.card-button4 {
+  width: 142px;
+  height: 40px;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  align-self: center; 
+  margin-bottom: 20px; 
+}
   
   .card-button4:hover {
     background-color:  white;
