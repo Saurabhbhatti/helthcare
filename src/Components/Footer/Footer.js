@@ -24,21 +24,21 @@ const Footer = () => {
               subscribe below
             </span>
           </p>
-          <div style={{ paddingLeft: '150px' }}>
+          <div style={{ paddingLeft: '15px', paddingRight: '15px' }}> {/* Adjusted padding */}
             <TextField
               id="standard-basic"
               label="Email"
               variant="standard"
-              style={{ width: '250px' }}
+              fullWidth // Take full width
               inputProps={{ style: { color: 'white' } }}
               InputLabelProps={{ style: { color: 'white' } }} />
             <Button
               variant="contained"
               onClick={handleSubmit}
-              style={{ backgroundColor: 'yellow', color: 'black', marginTop: '10px', marginLeft: '20px' }} >Send</Button>
+              style={{ backgroundColor: 'yellow', color: 'black', marginTop: '10px', width: '100%', borderRadius: '50px' }} >Send</Button> {/* Adjusted styling */}
           </div>
           <div>
-            <p className={style.paratext} style={{ paddingTop: "50px" }}>
+            <p className={style.paratext} style={{ paddingTop: "20px" }}> {/* Adjusted padding */}
               © 2035 by Network MD.
               <br />
               Powered and secured by Wix
@@ -94,3 +94,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
