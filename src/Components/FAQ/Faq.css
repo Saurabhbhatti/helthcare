@@ -1,0 +1,64 @@
+.dropdown {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.faq-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.dropdown-card {
+  margin-bottom: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+}
+
+.dropdown-header {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background-color: #f8f8f8;
+  cursor: pointer;
+}
+
+.dropdown-header:hover {
+  background-color: #e0e0e0;
+}
+
+.question {
+  flex: 1;
+  margin: 0;
+  font-size: 18px;
+}
+
+.arrow {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 5px 0 5px;
+  transition: transform 0.3s;
+}
+
+.arrow.up {
+  border-color: #000 transparent transparent transparent;
+  transform: rotate(180deg);
+}
+
+.arrow.down {
+  border-color: transparent transparent #000 transparent;
+}
+
+.dropdown-content {
+  padding: 15px;
+}
+
+.answer {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}

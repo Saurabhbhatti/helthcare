@@ -8,7 +8,7 @@ import AppointmentRequestWidget from "../Appoinments/Appoinment";
 
 const Card = () => {
   return (
-    <div>
+    <div style={{backgroundColor:'rgb(251, 251, 243)', paddingTop:'50px'}}>
       <Box
         sx={{
           display: "flex",

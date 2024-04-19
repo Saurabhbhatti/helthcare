@@ -4,11 +4,12 @@
     padding-left: 50px;
     background-color: rgb(251, 251, 243);
     font-family: "rozha one", serif;
+    justify-content: center;
   }
   
   .card4 {
-    width: 549px;
-    height: 283px;
+    width: 509px;
+    height: 253px;
     margin: 20px;
     border: 1px solid #ccc;
     overflow: hidden;

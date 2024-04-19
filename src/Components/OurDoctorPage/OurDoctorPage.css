@@ -5,11 +5,21 @@
 }
 
 .box-first {
+  padding-top: 50px;
   width: 100%; 
-  min-height: 200px; 
+  height: 390px; 
   background-color: rgb(234, 242, 246);
-  animation: slideIn 2s ease-in-out;
+  animation: slideIn 5s ease-in-out;
   color: rgb(9, 55, 31);
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 
 .box-middle {
@@ -37,7 +47,7 @@ img {
     width: 548px;
     min-height: 300px;
     position: absolute;
-    top: 330px;
+    top: 310px;
     left: 30px;
   }
 

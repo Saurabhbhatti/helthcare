@@ -34,6 +34,7 @@
   background-color: rgb(242, 237, 219, 0.8);
   color: black;
   position: relative;
+  font-size: 20px;
 }
 
 .card-button2 {
@@ -48,7 +49,8 @@
   font-size: 14px;
   position: absolute;
   bottom: 20px;
-  left: 20px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .card-button2:hover {

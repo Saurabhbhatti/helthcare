@@ -3,9 +3,15 @@ import './Cards.css';
 import card1 from '../../Assets/Image/card1-img1.webp';
 import Card2 from '../../Assets/Image/card1-img2.webp';
 import Card3 from '../../Assets/Image/card1-img3.webp';
-import Card4 from '../../Assets/Image/card1-img4.webp';
+import { useNavigate } from 'react-router-dom';
 
-const Card = ({ imageUrl, description }) => {
+const Card = ({ imageUrl, description, linkUrl  }) => {
+
+  const navigate = useNavigate();
+  const handleButtonClick = () => {
+    navigate('/ourpage')
+  };
+
   return (
     <div className="card2">
       <div className="card-content">
@@ -14,7 +20,7 @@ const Card = ({ imageUrl, description }) => {
         </div>
         <div className="card-description2">
           <p>{description}</p>
-          <button className="card-button2">Learn More</button>
+          <button className="card-button2" onClick={handleButtonClick}>Learn More</button>
         </div>
       </div>
     </div>
@@ -25,19 +31,18 @@ const Cards = () => {
   const cardsData = [
     {
       imageUrl: card1,
-      description: 'Describe one of your services',
+      description: 'Compound Semaglutide weight Loss Program',
+      linkUrl: 'https://example.com/page1',
     },
     {
       imageUrl: Card2,
-      description: 'Describe one of your services',
+      description: 'Meal Replacement Program',
+      linkUrl: 'https://example.com/page1',
     },
     {
       imageUrl: Card3,
-      description: 'Describe one of your services',
-    },
-    {
-      imageUrl: Card4,
-      description: 'Describe one of your services',
+      description: 'Managed weightloss program',
+      linkUrl: 'https://example.com/page1',
     },
   ];
 
@@ -46,6 +51,9 @@ const Cards = () => {
 
   return (
     <div>
+      <div className='card-container2'>
+        <h2 style={{fontSize:'50px', color:'rgb(9,55,31)'}}>Our Services</h2>
+      </div>
       <div className="card-container2">
         {firstRowCards.map((card, index) => (
           <Card key={index} imageUrl={card.imageUrl} description={card.description} />

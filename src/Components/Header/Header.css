@@ -5,6 +5,7 @@
   padding-bottom: 10px;
   margin-top: 10px;
   font-family: "rozha one", serif;
+  font-size: 16px;
 }
 
 .navbar {
@@ -20,6 +21,7 @@
 
 .nav-links {
   list-style: none;
+  font-size: 16px;
   display: flex;
   align-items: center;
   justify-content: center;

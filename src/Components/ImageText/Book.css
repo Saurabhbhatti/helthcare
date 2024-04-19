@@ -8,7 +8,7 @@
 .left {
     flex: 1;
     border: 1px solid black; 
-    max-width: 35%;
+    max-width: 40%;
     overflow: hidden;
     height: 747px;
 }
@@ -23,6 +23,7 @@
     flex: 1;
     border: 1px solid black;
     padding-top: 100px;
+    line-height: 1.6rem;
 }
 
 .bookpara {

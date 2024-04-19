@@ -2,8 +2,6 @@ body{
   font-family: "rozha one", serif;
 }
 
-
-
 @media (min-width: 576px) {
   .cards .col-sm-12 {
     flex: 0 0 100%;

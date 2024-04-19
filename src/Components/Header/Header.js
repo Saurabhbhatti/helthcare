@@ -6,13 +6,13 @@ class NavBar extends React.Component {
   render() {
     return (
       <>
-      <p className='disclaimer'>
+      <p className='disclamer'>
       Telehealth weight loss treatment for a Healthier, Happier You
       </p>
       <header className="navbar">
         <ul className="nav-links">
-          <li><a href="#">Our Doctors</a></li>
-          <li><a href="#">How it Works</a></li>
+          <li><a href="#doctors">Our Doctors</a></li>
+          <li><Link to='/howitworks'>How it Works</Link></li>
           <li><Link to="/appointments">Book a Session</Link></li>
         </ul>
       </header>

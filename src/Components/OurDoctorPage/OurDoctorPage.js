@@ -8,7 +8,7 @@ import Cards from '../Card2/Cards';
 import Paragraphs from '../Paragraph2/Paragraphs';
 import AnchorCard from '../Card3/AnchorCard';
 import Book from '../ImageText/Book';
-import JoinUs from '../JoinUs/JoinUs'
+import Faq from '../FAQ/Faq'
 import Footer from '../Footer/Footer';
 import { useNavigate } from 'react-router-dom';
 import { Button } from '@mui/material';
@@ -39,14 +39,14 @@ const OurDoctorPage = () => {
                 <div className='box-last'>
                     <img src={HomeImage} alt="Home.jpg" />
                 </div>
-            </div >
+            </div>
             <Paragraph/>
             <Card />
             <Cards />
             <Paragraphs/>
             <Book/>
             <AnchorCard />
-            <JoinUs />
+            <Faq />
             <Footer />
         </>
 
