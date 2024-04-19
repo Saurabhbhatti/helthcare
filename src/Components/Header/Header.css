@@ -1,12 +1,13 @@
 .disclamer{
   border-top: 2px solid rgb(160,19,142);
   margin: auto;
-  padding: 10px;
-  padding-left: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 190px;
   margin-top: 10px;
   font-family: "rozha one", serif;
   font-size: 16px;
-  width: 100%;
+  width:  auto;
 }
 
 .navbar {
