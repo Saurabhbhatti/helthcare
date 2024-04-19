@@ -60,6 +60,21 @@
     transition: all 0.2s ease, visibility 0s;
   }
   
+  .coming-soon-container {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .coming-soon-text, .coming-soon-subtext {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
   
   @media (max-width: 768px) {
     .card4 {

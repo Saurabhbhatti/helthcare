@@ -4,8 +4,7 @@ import './App.css';
 import OurDoctorPage from './Components/OurDoctorPage/OurDoctorPage';
 import HowItWorks from './pages/HowItWorks'
 import BookAppoointment from './Components/Appoinments/BookAppoinment';
-import OurPage from './pages/HowItWorks';
-
+import OurPage from './Components/Card2/OurPage';
 
 
 function App() {
