@@ -33,17 +33,17 @@ const AppoinmentCards = () => {
   const cardsData = [
     {
       imageUrl: card1,
-      description: "Sandy Ndetah- New Mexico Nurse Practitioner",
+      description: "Jaimee Ussery- Iowa Nurse Practitioner",
       scopeId: "b343f131-5bbc-4bb1-bfa4-15530b7fa1fe",
-      scopeUrl: "sandy-ndetah",
+      scopeUrl: "jaimee-ussery5125",
       applicationId:
         "7c72cb9f9a9b913654bb89d6c7b4e71a77911b30192051da35384b4d0c6d505b",
     },
     {
       imageUrl: Card2,
-      description: "Jaimee Ussery- Iowa Nurse Practitioner",
+      description: "Sandy Ndetah- New Mexico Nurse Practitioner",
       scopeId: "7c019d46-6fb2-4a42-9d25-253151e62ac2",
-      scopeUrl: "jaimee-ussery5125",
+      scopeUrl: "sandy-ndetah",
       applicationId:
         "7c72cb9f9a9b913654bb89d6c7b4e71a77911b30192051da35384b4d0c6d505b",
     },
