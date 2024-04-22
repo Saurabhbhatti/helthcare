@@ -26,7 +26,7 @@ const Card = () => {
           <Box>
             <img src={doct1} height='250px' width='100%' />
             <Typography sx={{ marginTop: "4px",  marginBottom :'10px' }}>
-              Jaimee Ussery <br/> Nurse Practitioner
+            Jaimee Ussery- Iowa  <br/> Nurse Practitioner
             </Typography>
             <AppointmentRequestWidget
                     initialScopeId='7c019d46-6fb2-4a42-9d25-253151e62ac2'
@@ -40,7 +40,7 @@ const Card = () => {
           <Box>
             <img src={doct2} height='250px' width='100%'/>
             <Typography sx={{ marginTop: "4px" , marginBottom :'10px' }}>
-              Sandrine Ndetah <br/> Nurse Practitioner
+            Sandy Ndetah- New Mexico <br/> Nurse Practitioner
             </Typography>
             <AppointmentRequestWidget
                     initialScopeId='b343f131-5bbc-4bb1-bfa4-15530b7fa1fe'
@@ -53,7 +53,7 @@ const Card = () => {
           <Box>
             <img src={doct3} height='250px' width='100%' />
             <Typography sx={{ marginTop: "4px", marginBottom :'10px'}}>
-              Dawn Coston <br/> Nurse Practitioner
+            Dawn Coston - Colorado <br/>Nurse Practitioner
             </Typography>
             <AppointmentRequestWidget
                     initialScopeId='153bd7d5-bb4a-4a78-871f-e888c7d3da14'
