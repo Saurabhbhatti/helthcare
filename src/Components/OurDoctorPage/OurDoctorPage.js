@@ -23,7 +23,7 @@ const OurDoctorPage = () => {
             <Header />
             <div className='Container'>
                 <div className='box-first'>
-                    <h1 style={{ fontSize: '60px' }}>
+                    <h1 className='heading-bx-first'>
                         <span>
                             Off the Charts:<br /> Your Partner for <br /> Healthier Living
                         </span>

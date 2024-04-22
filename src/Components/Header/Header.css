@@ -2,12 +2,11 @@
   border-top: 2px solid rgb(160,19,142);
   margin: auto;
   padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 190px;
   margin-top: 10px;
   font-family: "rozha one", serif;
-  font-size: 16px;
+  font-size: 18px;
   width:  auto;
+  padding-left: 180px;
 }
 
 .navbar {
@@ -39,7 +38,7 @@
   border-top: 1px solid rgb(234,242,246);
   padding-top: 10px;
   padding-bottom: 10px;
-  margin: auto
+  margin: auto;
 }
 
 .nav-links li {

@@ -16,16 +16,6 @@ const Paragraphs = () => {
           </div>
         </div>
       </section>
-      {/* <section>
-        <div>
-          <div className='containersticky'>
-            <div className='sticky'></div>
-            <div style={{border:'2px solid yellow'}}>
-              The href attribute requires a valid value to be accessible. Provide a valid, navigable address as the href value. If you cannot provide a valid href,
-            </div>
-          </div>
-        </div>
-      </section> */}
     </>
   );
 };
