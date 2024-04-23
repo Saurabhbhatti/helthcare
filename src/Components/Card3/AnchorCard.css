@@ -23,11 +23,13 @@
     font-size: 50px;
  }
 
- .paragraphslider{
-    text-align: center;
+ .paragraphslider {
+    text-align: center; 
     font-size: 18px;
-    line-height: 1.6rem;
- }
+    line-height: 1.6rem; 
+    max-width: 80%; 
+    margin: 0 auto; 
+}
 
  .upper-content{
     height: 250px;

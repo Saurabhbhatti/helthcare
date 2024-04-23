@@ -5,6 +5,7 @@ import OurDoctorPage from './Components/OurDoctorPage/OurDoctorPage';
 import HowItWorks from './pages/HowItWorks'
 import BookAppoointment from './Components/Appoinments/BookAppoinment';
 import OurPage from './Components/Card2/OurPage';
+import DoctorsBio from "./Components/Header/DoctorsBio"
 
 
 function App() {
@@ -17,6 +18,8 @@ function App() {
             <Route path='/howitworks'element={<HowItWorks/>} />
             <Route path='/ourpage' element={<OurPage/>}/>
             <Route path='/appointments' element={<BookAppoointment/>} />
+            <Route path='/appointments-refills' element={<BookAppoointment/>}/>
+            <Route path='/otcteam' element={<DoctorsBio/>}/>
           </Routes>
         </main>
       </div>

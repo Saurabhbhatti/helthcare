@@ -16,12 +16,11 @@ const Footer = () => {
       <div className={style.footerflex}>
         <div>
           <p className={style.para}>
-            <h1>Network MD</h1>
+            <h1>OTC Body</h1>
           </p>
           <p className={style.paratext}>
             <span>
-              Network MD For our latest health tips and tricks <br />
-              subscribe below
+            Division of Fit Body Faster
             </span>
           </p>
           <div style={{ paddingLeft: '15px', paddingRight: '15px' }}> {/* Adjusted padding */}
@@ -39,28 +38,14 @@ const Footer = () => {
           </div>
           <div>
             <p className={style.paratext} style={{ paddingTop: "20px" }}> {/* Adjusted padding */}
-              © 2035 by Network MD.
+              © 2035 by OTC Body.
               <br />
               Powered and secured by Wix
             </p>
           </div>
         </div>
 
-        <div className={style.footerFlexContentPad}>
-          <ul className={`${style.footerUL} `}>
-            <span style={{ fontSize: '18px', color: 'white' }}><b>Menu</b></span>
-            <li>
-              <a href="#">Our Doctors</a>
-            </li>
-            <li>
-              <a href="#">How it Works</a>
-            </li>
-            <li>
-              <a href="#">Book a Session</a>
-            </li>
-          </ul>
-        </div>
-
+        
         <div className={style.footerFlexContent}>
           <ul className={style.footerUL}>
             <span style={{ fontSize: '18px', color: 'white' }}><b>Social</b></span>
@@ -84,7 +69,7 @@ const Footer = () => {
             <span style={{ fontSize: '18px', color: 'white' }}><b>Contacts</b></span>
             <li style={{ color: 'white' }}>
               <span>123-456-7890</span><br />
-              <span><b>info@mysite.com</b></span>
+              <span><b>info@otcbody.com</b></span>
             </li>
           </ul>
         </div>

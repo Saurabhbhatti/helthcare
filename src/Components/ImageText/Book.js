@@ -16,7 +16,7 @@ const Container = () => {
                 <img src={textimg1} alt="Image Description" width="50px" height="50px" style={{paddingRight:'60px', paddingTop:'20px'}}/>
                 <div>
                     <h2><span>Initial Consultation</span></h2>
-                    <p>"Kickstart your weight loss journey with <br/> Off the Charts in just three steps! Begin <br/> by scheduling a consultation to discuss <br/>  your goals and medical history." </p>
+                    <p>"Kickstart your weight loss journey with <br/> OTC in just three steps! Begin <br/> by scheduling a consultation to discuss <br/>  your goals and medical history." </p>
                 </div>
                 </div>
                 <div className='img-text'>

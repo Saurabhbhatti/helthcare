@@ -5,9 +5,9 @@
 }
 
 .box-first {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  width: 100%;  
+  padding-top: 30px;
+  width: 100%; 
+  height: auto; 
   background-color: rgb(234, 242, 246);
   animation: slideIn 5s ease-in-out;
   color: rgb(9, 55, 31);
@@ -23,7 +23,7 @@
 }
 
 .heading-bx-first{
-  font-size: 60px;
+  font-size: 56px;
 }
 
 .box-middle {
@@ -48,8 +48,8 @@ img {
     flex-direction: row; }
 
   .box-first {
-    width: 584px;
-    min-height: 300px;
+    width: 504px;
+    min-height: 350px;
     position: absolute;
     top: 310px;
     left: 30px;

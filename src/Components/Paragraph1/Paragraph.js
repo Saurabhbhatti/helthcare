@@ -6,7 +6,7 @@ const Paragraphs = () => {
     <div className="paragraph-container">
       <h1 className="paragraph-text">
         <span>
-          Revolutionize weight loss with Off the Charts telehealth! FDA-approved
+          Revolutionize weight loss with OTC telehealth! FDA-approved
           meds, personalized plans, and GLP-1 hunger control. Ditch surgeries,
           embrace convenience. Start your journey to a healthier you today!
         </span>
