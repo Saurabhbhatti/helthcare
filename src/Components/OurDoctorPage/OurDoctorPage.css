@@ -7,8 +7,6 @@
 
 .box-first {
   padding-top: 30px;
-  width: 100%; 
-  height: auto; 
   background-color: rgb(234, 242, 246);
   animation: slideIn 5s ease-in-out;
   color: rgb(9, 55, 31);
