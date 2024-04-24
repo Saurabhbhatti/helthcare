@@ -27,7 +27,7 @@ const Card = () => {
           <Box>
             <img src={doct1} height='260px' width='100%' />
             <Typography sx={{ marginTop: "4px",  marginBottom :'10px', fontSize:'16px' , fontFamily: 'rozha one, serif' }}>
-            For patients residing in Iowa,<br/>connect with Jaimee ussery, <br/> Nurse Practitioner
+            For patients residing in Iowa,<br/>connect with Jaimee Ussery, <br/> Nurse Practitioner
             </Typography>
             <AppointmentRequestWidget
                     initialScopeId='7c019d46-6fb2-4a42-9d25-253151e62ac2'
@@ -54,7 +54,7 @@ const Card = () => {
           <Box>
             <img src={doct3} height='260px' width='100%' />
             <Typography sx={{ marginTop: "4px", marginBottom :'10px', fontSize:'16px' , fontFamily: 'rozha one, serif'}}>
-            For patients residing in Colorado,<br/>connect with dawn-coston,<br/> Nurse Practitioner
+            For patients residing in Colorado,<br/>connect with Dawn Coston,<br/> Nurse Practitioner
             </Typography>
             <AppointmentRequestWidget
                     initialScopeId='153bd7d5-bb4a-4a78-871f-e888c7d3da14'
