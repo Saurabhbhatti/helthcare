@@ -33,9 +33,9 @@ const Cards = () => {
   const cardsData = [
     {
       imageUrl: card1,
-      description: "Compound Semaglutide weight Loss Program",
+      description: "Compound Semaglutide Weight Loss Program",
       secondDescription:
-        "Experience our Compound Semaglutide Weight Loss Program - a comprehensive, personalized service integrating medication, nutrition counseling, exercise guidance, and ongoing support for effective and sustainable weight loss."
+        "Experience our Compound Semaglutide Weight Loss Program - a comprehensive, personalized service integrating medication, nutrition counseling, exercise guidance, and ongoing support for effective and sustainable Weight Loss."
     },
     {
       imageUrl: Card2,
@@ -45,7 +45,7 @@ const Cards = () => {
     },
     {
       imageUrl: Card3,
-      description: "Managed weightloss program",
+      description: "Managed Weight Loss Program",
       secondDescription:
         "Embark on our Managed Weight Loss Program - a tailored journey combining medical supervision, personalized nutrition plans, fitness strategies, and ongoing support for achieving your weight goals effectively and sustainably.",
     },

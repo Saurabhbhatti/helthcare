@@ -1,7 +1,14 @@
 import React from "react";
 import './Paragraph.css'; 
+import { useNavigate } from "react-router-dom";
 
 const Paragraphs = () => {
+
+  const navigate = useNavigate();
+    const handleClickStart = () => {
+        navigate('/appointments')
+    }
+
   return (
     <div className="paragraph-container">
       <h1 className="paragraph-text">
@@ -11,7 +18,7 @@ const Paragraphs = () => {
           embrace convenience. Start your journey to a healthier you today!
         </span>
       </h1>
-      <button className="start-button">Start Now</button>
+      <button className="start-button" onClick={handleClickStart}>Start Now</button>
       <h1 className="paragraph-text">
         <span>
         Connect with Our Experienced Team

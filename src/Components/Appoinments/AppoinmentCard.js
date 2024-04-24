@@ -33,7 +33,7 @@ const AppoinmentCards = () => {
   const cardsData = [
     {
       imageUrl: card1,
-      description: "For patients residing in Iowa,connect with Jaimee, Nurse Practitioner",
+      description: "For patients residing in Iowa,connect with Jaimee Ussery, Nurse Practitioner",
       scopeId: "7c019d46-6fb2-4a42-9d25-253151e62ac2",
       scopeUrl: "jaimee-ussery5125",
       applicationId:
@@ -41,7 +41,7 @@ const AppoinmentCards = () => {
     },
     {
       imageUrl: Card2,
-      description: "For patients residing in New Mexico,connect with Sandy,Nurse Practitioner",
+      description: "For patients residing in New Mexico,connect with Sandy Ndetah,Nurse Practitioner",
       scopeId: "b343f131-5bbc-4bb1-bfa4-15530b7fa1fe",
       scopeUrl: "sandy-ndetah",
       applicationId:
