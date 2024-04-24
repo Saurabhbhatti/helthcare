@@ -25,7 +25,7 @@ const OurDoctorPage = () => {
                 <div className='box-first'>
                     <h1 className='heading-bx-first'>
                         <span>
-                        OTC:<br /> Your Partner for <br /> Healthier Living
+                        OTC BODY:<br /> Your Partner for <br /> Healthier Living
                         </span>
                         <span  style={{ display: 'block' }}>
                             <Button variant='contained' onClick={handleClick} style={{backgroundColor:'rgb(9 55 31)', borderRadius:'10px'}}>Book Now</Button>

@@ -44,14 +44,6 @@ const OurPage = () => {
           </Paragraph>
         </Section>
         <Section>
-          <Title> Baseline Investigations and Monitoring</Title>
-          <Paragraph>
-            Perform baseline laboratory investigations, including fasting blood
-            glucose, lipid profile, liver function tests, kidney function tests,
-            and HbA1c levels.
-          </Paragraph>
-        </Section>
-        <Section>
           <Title> Initiation of Compound Semaglutide Treatment</Title>
           <Paragraph>
             Prescribe compound semaglutide according to the recommended dosing

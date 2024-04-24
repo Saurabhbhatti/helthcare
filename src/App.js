@@ -15,10 +15,11 @@ function App() {
         <main>
           <Routes>
             <Route path='/' element={<OurDoctorPage />} />
+            <Route path='/home' element={<OurDoctorPage />} />
             <Route path='/howitworks'element={<HowItWorks/>} />
             <Route path='/ourpage' element={<OurPage/>}/>
             <Route path='/appointments' element={<BookAppoointment/>} />
-            <Route path='/appointments-refills' element={<BookAppoointment/>}/>
+            <Route path='/refills' element={<BookAppoointment/>}/>
             <Route path='/otcteam' element={<DoctorsBio/>}/>
           </Routes>
         </main>

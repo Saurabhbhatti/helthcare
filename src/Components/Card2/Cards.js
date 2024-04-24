@@ -18,8 +18,8 @@ const Card = ({ imageUrl, description, secondDescription }) => {
           <img src={imageUrl} alt="Card" />
         </div>
         <div className="card-description2">
-          <p style={{fontSize:'18px'}}>{description}</p>
-          <p style={{fontSize:'14px'}}>{secondDescription}</p>
+          <p style={{fontSize:'16px'}}>{description}</p>
+          <p style={{fontSize:'12px'}}>{secondDescription}</p>
           <button className="card-button2" onClick={handleButtonClick}>
             Learn More
           </button>
@@ -57,7 +57,7 @@ const Cards = () => {
   return (
     <div>
       <div className="card-container2">
-        <h2 style={{ fontSize: "50px", color: "rgb(9,55,31)" }}>
+        <h2 style={{ fontSize: "40px", color: "rgb(9,55,31)" }}>
           Our Services
         </h2>
       </div>

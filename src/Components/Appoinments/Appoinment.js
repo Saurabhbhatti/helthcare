@@ -25,7 +25,7 @@ const AppointmentRequestWidget = (props) => {
           }
           .spwidget-button {
             display: inline-block;
-            padding: 12px 24px;
+            padding: 12px 18px;
             color: #fff !important;
             background: #3D768A;
             border: 0;

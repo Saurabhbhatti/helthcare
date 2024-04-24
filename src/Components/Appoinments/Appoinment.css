@@ -16,26 +16,27 @@
   }
   
   .card-image4 {
-    width: 50%;
-    height: 100%; 
-    flex: 0 0 50%; 
+    width:50%;
+    ;
   }
   
   .card-image4 img {
     width: 100%;
-    height: 100%;
+    height:100%;
+    object-fit: cover;
   }
   
   .card-description4 {
     width: 50%; 
-    padding: 20px;
     background-color: rgb(242 237 219 / 80%);
     color: black;
     position: relative;
-    font-size: 20px;
+    font-size: 18px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 20px;
+    text-align: left;
 }
   
 .card-button4 {

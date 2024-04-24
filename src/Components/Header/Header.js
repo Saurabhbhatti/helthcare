@@ -8,22 +8,18 @@ class NavBar extends React.Component {
     super(props);
     this.state = {
       showMenu: false,
-      showModal: false 
     };
     this.toggleMenu = this.toggleMenu.bind(this);
-    this.toggleModal = this.toggleModal.bind(this); 
   }
 
   toggleMenu() {
-    this.setState({ showMenu: !this.state.showMenu });
-  }
-
-  toggleModal() {
-    this.setState({ showModal: !this.state.showModal });
+    this.setState((prevState) => ({
+      showMenu: !prevState.showMenu,
+    }));
   }
 
   render() {
-    const { showMenu, showModal } = this.state;
+    const { showMenu } = this.state;
 
     return (
       <>
@@ -34,31 +30,20 @@ class NavBar extends React.Component {
           <div className="logo-container">
             <img src={logo} alt="Your Logo" className="logo" />
           </div>
-          <ul className={`nav-links ${showMenu && !showModal ? 'show' : ''}`}>
-            <li><Link to='/howitworks'>How it Works</Link></li>
-            <li><Link to="/appointments">Book a Session</Link></li>
-            <li><Link to="/otcteam">OTC Team</Link></li>
-            <li><Link to="/appointments-refills">Refills</Link></li>
-          </ul>
           <div className="menu-toggle" onClick={this.toggleMenu}>
-            <div className={`bar ${showMenu ? 'change' : ''}`}></div>
-            <div className={`bar ${showMenu ? 'change' : ''}`}></div>
-            <div className={`bar ${showMenu ? 'change' : ''}`}></div>
-            <div className={`bar ${showMenu ? 'change' : ''}`}></div>
+            <div className={`hamburger-icon ${showMenu ? 'open' : ''}`}>
+              <div className="bar"></div>
+              <div className="bar"></div>
+              <div className="bar"></div>
+            </div>  
           </div>
-          {showModal && (
-            <div className="modal">
-              <div className="modal-content">
-                <span className="close" onClick={this.toggleModal}>&times;</span>
-                <ul className="modal-links">
-                  <li><Link to='/howitworks'>How it Works</Link></li>
-                  <li><Link to="/appointments">Book a Session</Link></li>
-                  <li><Link to="/otcteam">OTC Team</Link></li>
-                  <li><Link to="/appointments-refills">Refills</Link></li>
-                </ul>
-              </div>
-            </div>
-          )}
+          <ul className={`nav-links ${showMenu ? 'show' : ''}`}>
+            <li><Link to='/home' onClick={this.toggleMenu}>Home</Link></li>
+            <li><Link to='/howitworks' onClick={this.toggleMenu}>How it Works</Link></li>
+            <li><Link to="/appointments" onClick={this.toggleMenu}>Book a Session</Link></li>
+            <li><Link to="/otcteam" onClick={this.toggleMenu}>OTC Team</Link></li>
+            <li><Link to="/refills" onClick={this.toggleMenu}>Refills</Link></li>
+          </ul>
         </header>
       </>
     );

@@ -4,8 +4,6 @@
   width: 100%;
   height: auto;
   text-align: center;
-  margin-top: 0;
-  padding: 20px; 
 }
 
 .para-text {
@@ -25,7 +23,6 @@
   text-align:center; 
   padding-bottom: 30px; 
 }
-
 
 @media only screen and (max-width: 600px) {
   .para-text {

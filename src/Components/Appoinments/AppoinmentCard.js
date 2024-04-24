@@ -1,8 +1,8 @@
 import React from "react";
 import "./Appoinment.css";
-import card1 from "../../Assets/Image/dct1.jpg";
-import Card2 from "../../Assets/Image/dct2.jpg";
-import Card3 from "../../Assets/Image/dct3.jpg";
+import card1 from "../../Assets/Image/img2.jpg";
+import Card2 from "../../Assets/Image/img3.jpg";
+import Card3 from "../../Assets/Image/img4.jpg";
 import AppointmentRequestWidget from "./Appoinment";
 
 const AppoinmentCard = ({
@@ -15,7 +15,7 @@ const AppoinmentCard = ({
   return (
     <div className="card4">
       <div className="card-image4">
-        <img src={imageUrl} alt="Card4" />
+        <img src={imageUrl} alt="Doc-img.jpg" />
       </div>
       <div className="card-description4">
         <p>{description}</p>
@@ -33,7 +33,7 @@ const AppoinmentCards = () => {
   const cardsData = [
     {
       imageUrl: card1,
-      description: "Jaimee Ussery- Iowa Nurse Practitioner",
+      description: "For patients residing in Iowa,connect with Jaimee, Nurse Practitioner",
       scopeId: "7c019d46-6fb2-4a42-9d25-253151e62ac2",
       scopeUrl: "jaimee-ussery5125",
       applicationId:
@@ -41,7 +41,7 @@ const AppoinmentCards = () => {
     },
     {
       imageUrl: Card2,
-      description: "Sandy Ndetah- New Mexico Nurse Practitioner",
+      description: "For patients residing in New Mexico,connect with Sandy,Nurse Practitioner",
       scopeId: "b343f131-5bbc-4bb1-bfa4-15530b7fa1fe",
       scopeUrl: "sandy-ndetah",
       applicationId:
@@ -49,7 +49,7 @@ const AppoinmentCards = () => {
     },
     {
       imageUrl: Card3,
-      description: "Dawn Coston - Colorado Nurse Practitioner",
+      description: "For patients residing in Colorado,connect with dawn-coston,Nurse Practitioner",
       scopeId: "153bd7d5-bb4a-4a78-871f-e888c7d3da14",
       scopeUrl: "dawn-coston6627",
       applicationId:

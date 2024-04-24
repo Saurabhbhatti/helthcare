@@ -14,6 +14,11 @@ const SliderComponent = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 5000,
+    appendDots: dots => (
+      <div className="custom-dots">
+        <ul style={{ margin: "0" }}>{dots}</ul>
+      </div>
+    )
   };
 
   return (

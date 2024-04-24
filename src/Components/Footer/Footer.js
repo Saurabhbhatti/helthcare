@@ -23,12 +23,12 @@ const Footer = () => {
             Division of Fit Body Faster
             </span>
           </p>
-          <div style={{ paddingLeft: '15px', paddingRight: '15px' }}> {/* Adjusted padding */}
+          <div style={{ paddingLeft: '15px', paddingRight: '15px' }}> 
             <TextField
               id="standard-basic"
               label="Email"
               variant="standard"
-              fullWidth // Take full width
+              fullWidth 
               inputProps={{ style: { color: 'white' } }}
               InputLabelProps={{ style: { color: 'white' } }} />
             <Button
@@ -37,10 +37,8 @@ const Footer = () => {
               style={{ backgroundColor: 'yellow', color: 'black', marginTop: '10px', width: '100%', borderRadius: '50px' }} >Send</Button> {/* Adjusted styling */}
           </div>
           <div>
-            <p className={style.paratext} style={{ paddingTop: "20px" }}> {/* Adjusted padding */}
-              © 2035 by OTC Body.
-              <br />
-              Powered and secured by Wix
+            <p className={style.paratext} style={{ paddingTop: "20px" }}>
+              © 2024 by OTC Body.
             </p>
           </div>
         </div>
@@ -68,7 +66,6 @@ const Footer = () => {
           <ul className={style.footerUL}>
             <span style={{ fontSize: '18px', color: 'white' }}><b>Contacts</b></span>
             <li style={{ color: 'white' }}>
-              <span>123-456-7890</span><br />
               <span><b>info@otcbody.com</b></span>
             </li>
           </ul>
