@@ -10,6 +10,7 @@
   background-color: rgb(234, 242, 246);
   animation: slideIn 5s ease-in-out;
   color: rgb(9, 55, 31);
+  font-size: 56px; 
 }
 
 @keyframes slideIn {
@@ -21,11 +22,8 @@
   }
 }
 
-.heading-bx-first{
-  font-size: 56px;
-}
-
 .box-middle {
+  background-color: rgb(234, 242, 246);
   display: none; 
 }
 
@@ -42,9 +40,9 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  
   .Container {
-    flex-direction: row; }
+    flex-direction: row;
+  }
 
   .box-first {
     width: 504px;
@@ -52,32 +50,53 @@ img {
     position: absolute;
     top: 310px;
     left: 30px;
-    font-size: 32px;
+    font-size: 32px; 
   }
-  
 
   .box-middle {
     flex: 0.43;
-    background-color: rgb(234, 242, 246);
-    display: initial;
+    display: initial; 
   }
 
   .box-last {
     flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 }
 
 @media screen and (max-width: 767px) {
   .box-first {
     font-size: 32px;
+    width: 100%; 
+    position: relative; 
+    top: unset;
+    left: unset;
+  }
+
+  .box-middle {
+    display: initial; 
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .Container {
+    flex-direction: column;
+  }
+
+  .box-first {
+    width: 100%; 
+    min-height: auto; 
+    position: static; 
+    margin: 0 auto; 
+    font-size: 40px; 
+  }
+
+  .box-middle {
+    flex: 1;
+    display: initial; 
   }
 
   .box-last {
-    position: relative;
-    top: unset;
-    left: unset;
+    width: 100%; 
+    margin: 0 auto; 
   }
 }
