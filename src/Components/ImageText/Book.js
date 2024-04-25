@@ -30,7 +30,7 @@ const Container = () => {
                     <img src={textimg3} alt="Image Description" width="50px" height="50px" style={{ paddingRight: '30px', paddingTop: '20px' }} />
                     <div>
                         <h2><span>Implementation and Support</span></h2>
-                        <p>Start seeing results after 30-60 days,<br /> supported by evidence-based <br />protocols, nutritional guides, and as<br /> needed support from our experienced <br />team </p>
+                        <p>Start seeing results after 30-60 days,<br /> supported by evidence-based <br />protocols, nutritional guides, and as<br /> needed support from our experienced <br />team. </p>
                     </div>
                 </div>
             </div>

@@ -18,8 +18,8 @@ const Card = ({ imageUrl, description, secondDescription }) => {
           <img src={imageUrl} alt="Card" />
         </div>
         <div className="card-description2">
-          <p style={{fontSize:'18px'}}>{description}</p>
-          <p style={{fontSize:'14px'}}>{secondDescription}</p>
+          <p style={{fontSize:'17px', margin:'0px'}}>{description}</p>
+          <p style={{fontSize:'13px'}}>{secondDescription}</p>
           <button className="card-button2" onClick={handleButtonClick}>
             Learn More
           </button>

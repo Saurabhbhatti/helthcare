@@ -1,10 +1,9 @@
 .disclaimer {
   border-top: 2px solid rgb(160,19,142);
   margin: auto;
-  margin-top: 10px;
   font-family: "rozha one", serif;
   font-size: 18px;
-  width: auto;
+  width: 100%;
 }
 .navbar {
   font-family: "rozha one", serif;
