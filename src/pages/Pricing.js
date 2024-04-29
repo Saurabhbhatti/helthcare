@@ -25,9 +25,9 @@ const Pricing = () => {
   };
 
   const rows = [
-    { sku: '1ML', duration: '4 Week', patientCost: '$250' },
-    { sku: '2ML', duration: '8-10 Week', patientCost: '$425' },
-    { sku: '5ML', duration: '12-15 Week', patientCost: '$750' },
+    { sku: '1ML', duration: '4 Weeks', patientCost: '$250' },
+    { sku: '2ML', duration: '8-10 Weeks', patientCost: '$425' },
+    { sku: '5ML', duration: '12-15 Weeks', patientCost: '$750' },
   ];
 
   return (
