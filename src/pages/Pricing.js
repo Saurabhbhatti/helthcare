@@ -1,8 +1,8 @@
 import React from 'react';
 import Header from '../Components/Header/Header';
 import Footer from '../Components/Footer/Footer';
-import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper } from '@mui/material';
-import { Padding } from '@mui/icons-material';
+import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Typography, Button } from '@mui/material';
+import graph from '../Assets/Image/Graph.png';
 
 const Pricing = () => {
   const tableContainerStyle = {
@@ -10,6 +10,7 @@ const Pricing = () => {
     borderRadius: '10px',
     width: '70%',
     margin: '20px auto',
+    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', // Added box shadow for depth
   };
 
   const tableHeaderCellStyle = {
@@ -20,7 +21,6 @@ const Pricing = () => {
   const tableRowStyle = {
     '&:nth-of-type(odd)': {
       backgroundColor: '#fafafa',
-      Padding
     },
   };
 
@@ -32,8 +32,8 @@ const Pricing = () => {
 
   return (
     <>
-       <Header />
-      <div>
+      <Header />
+      <div style={{ textAlign: 'center' }}>
         <TableContainer component={Paper} style={tableContainerStyle}>
           <Table style={{ tableLayout: 'fixed' }}>
             <TableHead>
@@ -54,6 +54,7 @@ const Pricing = () => {
             </TableBody>
           </Table>
         </TableContainer>
+        <img src={graph} alt="Description of the image" style={{ maxWidth: '100%', display: 'block', margin: '40px auto', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }} />
       </div>
       <Footer />
     </>
