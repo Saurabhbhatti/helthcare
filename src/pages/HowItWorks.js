@@ -3,26 +3,46 @@ import Header from "../Components/Header/Header";
 import Footer from "../Components/Footer/Footer";
 import { colors } from "@mui/material";
 
+const BodyWrapper = styled.div`
+  overflow-x: hidden;
+`;
+
 const Container = styled.div`
   max-width: 900px;
   margin: 0 auto;
   padding: 20px;
+
+  @media screen and (max-width: 768px) {
+    padding: 10px;
+  }
 `;
 
 const Section = styled.section`
   margin-bottom: 40px;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 20px;
+  }
 `;
 
 const Title = styled.h2`
   color: rgb(9, 55, 31);
   font-size: 28px;
   margin-bottom: 10px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 24px;
+  }
 `;
 
 const Paragraph = styled.p`
   color: rgb(9, 55, 31);
   font-size: 18px;
   line-height: 1.5;
+
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+  }
 `;
 
 const InstructionList = styled.ol`
@@ -40,16 +60,25 @@ const VideoWrapper = styled.div`
   margin-top: 20px;
 
   display: flex;
+  flex-direction: column;
   gap: 20px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
 `;
 
 const VideoContainer = styled.div`
-  width: 50%;
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    width: 50%;
+  }
 `;
 
 const OurPage = () => {
   return (
-    <>
+    <BodyWrapper>
       <Header />
       <Container>
         <Section>
@@ -68,10 +97,15 @@ const OurPage = () => {
         </Section>
         <Section>
           <Title>Initiation of Compound Semaglutide Treatment</Title>
+          <Paragraph>
+            Prescribe compound semaglutide according to the recommended dosing
+            schedule, typically starting with a low dose and titrating up
+            gradually to the maintenance dose.
+          </Paragraph>
+        </Section>
+        <Section>
+          <Title> How to Draw and Inject Semaglutide?</Title>
           <div>
-            <h2 style={{ color: "rgb(9, 55, 31)" }}>
-              How to Draw and Inject Semaglutide?
-            </h2>
             <Paragraph>
               Semaglutide is administered subcutaneously via a small injection.
               These injections are only to be administered once a week. Please
@@ -85,9 +119,7 @@ const OurPage = () => {
               <InstructionListItem>
                 Clean top of the vial with an alcohol wipe.
               </InstructionListItem>
-              <InstructionListItem>
-                Hold vial upside down.
-              </InstructionListItem>
+              <InstructionListItem>Hold vial upside down.</InstructionListItem>
               <InstructionListItem>
                 Uncap the syringe( usually orange in color). Syringes are often
                 capped on both end ( needle and plunger side).
@@ -145,7 +177,7 @@ const OurPage = () => {
         </Section>
       </Container>
       <Footer />
-    </>
+    </BodyWrapper>
   );
 };
 
