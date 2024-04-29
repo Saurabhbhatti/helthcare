@@ -34,6 +34,7 @@ const Pricing = () => {
     <>
       <Header />
       <div style={{ textAlign: 'center' }}>
+        <Typography variant="h4" style={{ margin: '20px 0', color: '#333' }}>Choose Your Plan</Typography>
         <TableContainer component={Paper} style={tableContainerStyle}>
           <Table style={{ tableLayout: 'fixed' }}>
             <TableHead>
