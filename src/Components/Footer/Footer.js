@@ -48,7 +48,7 @@ const Footer = () => {
           <ul className={style.footerUL}>
             <span style={{ fontSize: '18px', color: 'white' }}><b>Social</b></span>
             <li>
-              <a href="">Facebook</a>
+              <a href="https://www.facebook.com/profile.php?id=61558525813461">Facebook</a>
             </li>
             <li>
               <a href="#">Pinterest</a>
@@ -57,7 +57,7 @@ const Footer = () => {
               <a href="#">LinkedIn</a>
             </li>
             <li>
-              <a href="#">Instagram</a>
+              <a href="https://www.instagram.com/otc_bodyfitness/">Instagram</a>
             </li>
           </ul>
         </div>

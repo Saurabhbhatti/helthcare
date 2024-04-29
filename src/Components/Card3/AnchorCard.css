@@ -1,11 +1,15 @@
+body {
+  overflow-x: hidden;
+}
+
 .background {
-    font-family: "rozha one", serif;
-    width: 100%;
-    height: 500px;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-  }
+  font-family: "rozha one", serif;
+  width: 100vw; 
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
   
   .card3 {
     background-color: rgb(242, 237, 219);
