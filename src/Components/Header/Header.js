@@ -43,6 +43,7 @@ class NavBar extends React.Component {
             <li><Link to="/appointments" onClick={this.toggleMenu}>Book a Session</Link></li>
             <li><Link to="/otcteam" onClick={this.toggleMenu}>OTC Team</Link></li>
             <li><Link to="/refills" onClick={this.toggleMenu}>Refills</Link></li>
+            <li><Link to="/pricing" onClick={this.toggleMenu}>Pricing</Link></li>
           </ul>
         </header>
       </>

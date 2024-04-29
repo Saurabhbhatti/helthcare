@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import Header from "../Header/Header";
-import Footer from "../Footer/Footer"
+import Header from "../Components/Header/Header";
+import Footer from "../Components/Footer/Footer"
 
 const Container = styled.div`
   max-width: 800px;

@@ -1,12 +1,12 @@
 import React from "react";
 import "./DoctorApp.css";
-import doctor1 from "../../Assets/Image/Dr.Mehta.jpg";
-import doctor2 from "../../Assets/Image/Dr. Schubhe.jpg";
-import doctor3 from "../../Assets/Image/img2.jpg";
-import doctor4 from "../../Assets/Image/img3.jpg";
-import doctor5 from "../../Assets/Image/img4.jpg";
-import Header from "../../Components/Header/Header";
-import Footer from "../../Components/Footer/Footer";
+import doctor1 from "../Assets/Image/Dr.Mehta.jpg";
+import doctor2 from "../Assets/Image/Dr. Schubhe.jpg";
+import doctor3 from "../Assets/Image/img2.jpg";
+import doctor4 from "../Assets/Image/img3.jpg";
+import doctor5 from "../Assets/Image/img4.jpg";
+import Header from "../Components/Header/Header";
+import Footer from "../Components/Footer/Footer";
 
 const DoctrsBio = ({ name, photoUrl, bio }) => {
   return (
