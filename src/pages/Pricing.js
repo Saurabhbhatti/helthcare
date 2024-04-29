@@ -10,7 +10,7 @@ const Pricing = () => {
     borderRadius: '10px',
     width: '70%',
     margin: '20px auto',
-    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', // Added box shadow for depth
+    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
   };
 
   const tableHeaderCellStyle = {
@@ -34,6 +34,7 @@ const Pricing = () => {
     <>
       <Header />
       <div style={{ textAlign: 'center' }}>
+        <Typography variant="h4" style={{ margin: '20px 0', color: '#333' }}>Choose Your Plan</Typography>
         <TableContainer component={Paper} style={tableContainerStyle}>
           <Table style={{ tableLayout: 'fixed' }}>
             <TableHead>
