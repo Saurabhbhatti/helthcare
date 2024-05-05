@@ -1,16 +1,24 @@
 .Container {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   font-family: "rozha one", serif;
   width: 100%;
 }
 
 .box-first {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding-top: 30px;
   background-color: rgb(234, 242, 246);
   animation: slideIn 5s ease-in-out;
   color: rgb(9, 55, 31);
-  font-size: 56px; 
+  min-height: 200px;
+}
+
+.Container.slider-visible {
+  background-color: rgb(234, 242, 246);
 }
 
 @keyframes slideIn {
@@ -22,21 +30,18 @@
   }
 }
 
-.box-middle {
-  background-color: rgb(234, 242, 246);
-  display: none; 
-}
-
 .box-last {
-  width: 100%; 
+  width: 100%;
+  max-height: fit-content;
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 200px; 
 }
 
 img {
-  max-width: 100%; 
-  max-height: 100%; 
+  max-width: 100%;
+  max-height: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -45,35 +50,24 @@ img {
   }
 
   .box-first {
-    width: 504px;
+    width: 50%;
     min-height: 350px;
-    position: absolute;
-    top: 310px;
-    left: 30px;
-    font-size: 32px; 
-  }
-
-  .box-middle {
-    flex: 0.43;
-    display: initial; 
+    padding: 20px;
+    font-size: 28px;
   }
 
   .box-last {
-    flex: 1;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
 @media screen and (max-width: 767px) {
   .box-first {
-    font-size: 32px;
-    width: 100%; 
-    position: relative; 
-    top: unset;
-    left: unset;
-  }
-
-  .box-middle {
-    display: initial; 
+    font-size: 28px;
+    width: 100%;  
   }
 }
 
@@ -83,20 +77,20 @@ img {
   }
 
   .box-first {
-    width: 100%; 
-    min-height: auto; 
-    position: static; 
-    margin: 0 auto; 
-    font-size: 40px; 
+    width: 100%;
+    min-height: auto;
+    position: static;
+    margin: 0 auto;
+    font-size: 38px;
   }
 
   .box-middle {
     flex: 1;
-    display: initial; 
+    display: initial;
   }
 
   .box-last {
-    width: 100%; 
-    margin: 0 auto; 
+    width: 100%;
+    margin: 0 auto;
   }
 }

@@ -33,7 +33,7 @@ const AppoinmentCards = () => {
   const cardsData = [
     {
       imageUrl: card1,
-      description: "For patients residing in Iowa, connect with Jaimee Ussery, Nurse Practitioner",
+      description: "Jaimee Ussery, Nurse Practitioner, Serves patients in Iowa",
       scopeId: "7c019d46-6fb2-4a42-9d25-253151e62ac2",
       scopeUrl: "jaimee-ussery5125",
       applicationId:
@@ -41,7 +41,7 @@ const AppoinmentCards = () => {
     },
     {
       imageUrl: Card2,
-      description: "For patients residing in New Mexico,  connect with Sandy Ndetah, Nurse Practitioner",
+      description: "Sandy Ndeta, Nurse Practioner, Serves patients in New Mexico",
       scopeId: "b343f131-5bbc-4bb1-bfa4-15530b7fa1fe",
       scopeUrl: "sandy-ndetah",
       applicationId:
@@ -49,7 +49,7 @@ const AppoinmentCards = () => {
     },
     {
       imageUrl: Card3,
-      description: "For patients residing in Colorado, connect with Dawn Coston, Nurse Practitioner",
+      description: "Dawn Coston, Nurse Practioner, Serves patients in Colorado",
       scopeId: "153bd7d5-bb4a-4a78-871f-e888c7d3da14",
       scopeUrl: "dawn-coston6627",
       applicationId:
