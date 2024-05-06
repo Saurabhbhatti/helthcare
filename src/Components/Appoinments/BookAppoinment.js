@@ -3,7 +3,6 @@ import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import Faq from '../FAQ/Faq';
 import AppoinmentCards from './AppoinmentCard';
-import AnchorCard from '../Card3/AnchorCard';
 
 const BookAppoointment = () => {
   const nurseSectionRef = useRef(null);
