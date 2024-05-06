@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import '../Header/Header.css';
 import logo from '../../Assets/Image/Icon.jpg';
+import './Header.css';
 
-class NavBar extends React.Component {
+class NavBar extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -13,7 +13,7 @@ class NavBar extends React.Component {
   }
 
   toggleMenu() {
-    this.setState((prevState) => ({
+    this.setState(prevState => ({
       showMenu: !prevState.showMenu,
     }));
   }
@@ -35,7 +35,7 @@ class NavBar extends React.Component {
               <div className="bar"></div>
               <div className="bar"></div>
               <div className="bar"></div>
-            </div>  
+            </div>
           </div>
           <ul className={`nav-links ${showMenu ? 'show' : ''}`}>
             <li><Link to='/home' onClick={this.toggleMenu}>Home</Link></li>
