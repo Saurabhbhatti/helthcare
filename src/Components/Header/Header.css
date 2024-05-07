@@ -75,7 +75,6 @@
   padding-top: 20px;
 }
 
-
 @media screen and (max-width: 768px) {
   .logo {
     width: 120px;
@@ -85,18 +84,18 @@
   .nav-links {
     display: none;
     position: absolute;
-    top: 90px;
-    left: 250px;
-    background-color: rgb(9,55,31);
+    top: 110px;
+    left: 0; 
+    background-color: rgb(9, 55, 31);
     z-index: 1000;
     border-bottom: none;
-    border-top: none
+    border-top: none;
+    width: 100%; 
   }
 
   .nav-links.show {
     display: flex;
     flex-direction: column;
-    width: 180px;
   }
 
   .nav-links li {
@@ -105,5 +104,6 @@
 
   .menu-toggle {
     display: block;
+    z-index: 1010;
   }
 }
