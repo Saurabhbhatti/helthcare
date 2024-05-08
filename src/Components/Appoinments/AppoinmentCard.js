@@ -41,7 +41,7 @@ const AppoinmentCards = () => {
     },
     {
       imageUrl: Card2,
-      description: "Sandy Ndeta, Nurse Practioner, Serves patients in New Mexico",
+      description: "Sandy Ndetah, Nurse Practioner, Serves patients in New Mexico",
       scopeId: "b343f131-5bbc-4bb1-bfa4-15530b7fa1fe",
       scopeUrl: "sandy-ndetah",
       applicationId:
