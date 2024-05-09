@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import HomeImage from '../../Assets/Image/Home-img.png';
+import HomeImage from '../../Assets/Image/Home-banner.jpg';
 import '../OurDoctorPage/OurDoctorPage.css';
 import Header from '../Header/Header';
 import Paragraph from '../Paragraph1/Paragraph';
@@ -40,7 +40,7 @@ const OurDoctorPage = () => {
                     </h1>
                 </div>
                 <div className='box-last'>
-                    <img src={HomeImage} alt="Home-img.png" onLoad={handleSliderVisible} />
+                    <img src={HomeImage} alt="Home-Banner.png" onLoad={handleSliderVisible} />
                 </div>
             </div>
             <Paragraph />
