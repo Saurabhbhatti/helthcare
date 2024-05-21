@@ -1,55 +1,47 @@
 .paragraph-container {
-    text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    background-color: rgb(234, 242, 246);
-    font-family: "rozha one", serif;
-  }
-  
+  text-align: center;
+  padding: 0 20px;
+  background-color: rgb(234, 242, 246);
+  font-family: "rozha one", serif;
+}
+
+.paragraph-text {
+  font-size: 24px;
+  line-height: 1.5;
+  text-align: center;
+  color: rgb(9,55,31);
+  margin: 0;
+  padding: 80px 0 20px;
+}
+
+.start-button {
+  background-color: #3D768A;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 142px;
+  height: 42px;
+  margin-bottom: 50px;
+}
+
+.start-button:hover {
+  background-color: white;
+  color: black;
+  transition: all 0.2s ease, visibility 0s;
+}
+
+@media screen and (min-width: 768px) {
   .paragraph-text {
-    font-size: 24px;
-    line-height: 1.5;
-    text-align: center;
-    color: rgb(9,55,31);
-    margin: 0px;
-    padding-top: 80px;
-    padding-bottom: 20px;
-  }
-  
-  .start-button {
-    background-color:#3D768A;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 142px;
-    height: 42px;
-    margin-bottom: 50px;
-  }
-  
-  .start-button:hover {
-    background-color:  white;
-    color: black;
-    transition: all 0.2s ease, visibility 0s;
-  }
-  
-  @media screen and (min-width: 768px) {
-    .paragraph-text {
       font-size: 32px;
-      padding-left: 120px;
-      padding-right: 120px;
-    }
+      padding: 80px 120px 20px;
   }
-  
-  @media screen and (min-width: 1024px) {
-    .paragraph-container {
-      padding-left: 150px;
-      padding-right: 150px;
-    }
+}
+
+@media screen and (min-width: 1024px) {
+  .paragraph-container {
+      padding: 0 150px;
   }
-  
+}

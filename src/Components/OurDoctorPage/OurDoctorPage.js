@@ -1,17 +1,19 @@
-import React, { useState } from 'react';
+import React, { useState, Suspense, useEffect } from 'react';
 import HomeImage from '../../Assets/Image/Home-banner.jpg';
 import '../OurDoctorPage/OurDoctorPage.css';
-import Header from '../Header/Header';
-import Paragraph from '../Paragraph1/Paragraph';
-import Card from '../Crad1/Card';
-import Cards from '../Card2/Cards';
-import Paragraphs from '../Paragraph2/Paragraphs';
-import AnchorCard from '../Card3/AnchorCard';
-import Book from '../ImageText/Book';
-import Faq from '../FAQ/Faq';
-import Footer from '../Footer/Footer';
 import { useNavigate } from 'react-router-dom';
 import { Button } from '@mui/material';
+
+// Lazy load components
+const Header = React.lazy(() => import('../Header/Header'));
+const Paragraph = React.lazy(() => import('../Paragraph1/Paragraph'));
+const Card = React.lazy(() => import('../Crad1/Card'));
+const Cards = React.lazy(() => import('../Card2/Cards'));
+const Paragraphs = React.lazy(() => import('../Paragraph2/Paragraphs'));
+const AnchorCard = React.lazy(() => import('../Card3/AnchorCard'));
+const Book = React.lazy(() => import('../ImageText/Book'));
+const Faq = React.lazy(() => import('../FAQ/Faq'));
+const Footer = React.lazy(() => import('../Footer/Footer'));
 
 const OurDoctorPage = () => {
     const navigate = useNavigate();
@@ -22,16 +24,22 @@ const OurDoctorPage = () => {
     }
 
     const handleSliderVisible = () => {
-        setSliderVisible(true);
+        const img = new Image();
+        img.src = HomeImage;
+        img.onload = () => setSliderVisible(true);
     }
 
+    useEffect(() => {
+        handleSliderVisible();
+    }, []);
+
     return (
-        <>
+        <Suspense fallback={<div>Loading...</div>}>
             <Header />
             <div className={`Container ${sliderVisible ? 'slider-visible' : ''}`}>
                 <div className='box-first'>
-                    <h1 className='heading-bx-first'>
-                        <span>
+                    <h1>
+                        <span className='heading-bx-first'>
                             OTC BODY<br /> Your Partner for <br /> Healthier Living
                         </span>
                         <span style={{ display: 'block' }}>
@@ -40,7 +48,7 @@ const OurDoctorPage = () => {
                     </h1>
                 </div>
                 <div className='box-last'>
-                    <img src={HomeImage} alt="Home-Banner.png" onLoad={handleSliderVisible} />
+                    <img src={HomeImage} alt="Home-Banner.png" loading="lazy" width="1200px" height="600px"/>
                 </div>
             </div>
             <Paragraph />
@@ -51,8 +59,7 @@ const OurDoctorPage = () => {
             <AnchorCard />
             <Faq />
             <Footer />
-        </>
-
+        </Suspense>
     );
 }
 

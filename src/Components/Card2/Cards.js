@@ -1,8 +1,8 @@
 import React from "react";
 import "./Cards.css";
-import card1 from "../../Assets/Image/card1-img1.webp";
-import Card2 from "../../Assets/Image/card1-img2.webp";
-import Card3 from "../../Assets/Image/card1-img3.webp";
+import card1 from "../../Assets/Image/card1-img1.jpg";
+import Card2 from "../../Assets/Image/card1-img2.jpg";
+import Card3 from "../../Assets/Image/card1-img3.jpg";
 import { useNavigate } from "react-router-dom";
 
 const Card = ({ imageUrl, description, secondDescription }) => {

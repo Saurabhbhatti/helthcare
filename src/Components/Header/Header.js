@@ -28,7 +28,7 @@ class NavBar extends React.Component {
       </p>
       <header className="navbar">
         <div className="logo-container">
-          <img src={logo} alt="Your Logo" className="logo" />
+          <img src={logo} alt="Your Logo" className="logo" width="160" height="100px"/>
         </div>
         <ul className={`nav-links ${showMenu ? 'show' : ''}`}>
           <li><Link to='/home' onClick={this.toggleMenu}>Home</Link></li>

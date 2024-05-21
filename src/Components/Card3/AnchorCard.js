@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../Card3/AnchorCard.css";
-import backgroundImage from "../../Assets/Image/sliderBackground.webp";
+import backgroundImage from "../../Assets/Image/sliderBackground.jpg";
 
 const SliderComponent = () => {
   const sliderSettings = {
