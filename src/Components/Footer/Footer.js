@@ -8,7 +8,6 @@ const Footer = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Email submitted:", email);
   };
 
   return (

@@ -62,7 +62,6 @@ const AppoinmentCards = () => {
       <div className="card-container4">
         {cardsData.map(
           (card, index) => (
-            console.log("Card", card),
             (
               <AppoinmentCard
                 key={index}
