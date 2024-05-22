@@ -1,21 +1,15 @@
 import React from "react";
 import "./Appoinment.css";
 import card1 from "../../Assets/Image/img2.jpg";
-import Card2 from "../../Assets/Image/img3.jpg";
-import Card3 from "../../Assets/Image/img4.jpg";
+import card2 from "../../Assets/Image/img3.jpg";
+import card3 from "../../Assets/Image/img4.jpg";
 import AppointmentRequestWidget from "./Appoinment";
 
-const AppoinmentCard = ({
-  imageUrl,
-  description,
-  scopeId,
-  scopeUrl,
-  applicationId,
-}) => {
+const AppointmentCard = ({ imageUrl, description, scopeId, scopeUrl, applicationId }) => {
   return (
     <div className="card4">
       <div className="card-image4">
-        <img src={imageUrl} alt="Doc-img.jpg" />
+        <img src={imageUrl} alt="Doc-img" />
       </div>
       <div className="card-description4">
         <p>{description}</p>
@@ -29,51 +23,44 @@ const AppoinmentCard = ({
   );
 };
 
-const AppoinmentCards = () => {
+const AppointmentCards = () => {
   const cardsData = [
     {
       imageUrl: card1,
       description: "Jaimee Ussery, Nurse Practitioner, Serves patients in Iowa",
       scopeId: "7c019d46-6fb2-4a42-9d25-253151e62ac2",
       scopeUrl: "jaimee-ussery5125",
-      applicationId:
-        "7c72cb9f9a9b913654bb89d6c7b4e71a77911b30192051da35384b4d0c6d505b",
+      applicationId: "7c72cb9f9a9b913654bb89d6c7b4e71a77911b30192051da35384b4d0c6d505b",
     },
     {
-      imageUrl: Card2,
-      description: "Sandy Ndetah, Nurse Practioner, Serves patients in New Mexico",
+      imageUrl: card2,
+      description: "Sandy Ndetah, Nurse Practitioner, Serves patients in New Mexico",
       scopeId: "b343f131-5bbc-4bb1-bfa4-15530b7fa1fe",
       scopeUrl: "sandy-ndetah",
-      applicationId:
-        "7c72cb9f9a9b913654bb89d6c7b4e71a77911b30192051da35384b4d0c6d505b",
+      applicationId: "7c72cb9f9a9b913654bb89d6c7b4e71a77911b30192051da35384b4d0c6d505b",
     },
     {
-      imageUrl: Card3,
-      description: "Dawn Coston, Nurse Practioner, Serves patients in Colorado",
+      imageUrl: card3,
+      description: "Dawn Coston, Nurse Practitioner, Serves patients in Colorado",
       scopeId: "153bd7d5-bb4a-4a78-871f-e888c7d3da14",
       scopeUrl: "dawn-coston6627",
-      applicationId:
-        "7c72cb9f9a9b913654bb89d6c7b4e71a77911b30192051da35384b4d0c6d505b",
+      applicationId: "7c72cb9f9a9b913654bb89d6c7b4e71a77911b30192051da35384b4d0c6d505b",
     },
   ];
 
   return (
     <>
       <div className="card-container4">
-        {cardsData.map(
-          (card, index) => (
-            (
-              <AppoinmentCard
-                key={index}
-                imageUrl={card.imageUrl}
-                description={card.description}
-                scopeId={card.scopeId}
-                scopeUrl={card.scopeUrl}
-                applicationId={card.applicationId}
-              />
-            )
-          )
-        )}
+        {cardsData.map((card, index) => (
+          <AppointmentCard
+            key={index}
+            imageUrl={card.imageUrl}
+            description={card.description}
+            scopeId={card.scopeId}
+            scopeUrl={card.scopeUrl}
+            applicationId={card.applicationId}
+          />
+        ))}
       </div>
       <div className="coming-soon-container">
         <p className="coming-soon-text">Coming soon....</p>
@@ -83,4 +70,5 @@ const AppoinmentCards = () => {
   );
 };
 
-export default AppoinmentCards;
+export default AppointmentCards;
+

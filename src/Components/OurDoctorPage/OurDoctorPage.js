@@ -48,7 +48,7 @@ const OurDoctorPage = () => {
                     </h1>
                 </div>
                 <div className='box-last'>
-                    <img src={HomeImage} alt="Home-Banner.png" loading="lazy" width="1200px" height="600px"/>
+                    <img src={HomeImage} alt="Home-Banner.png" width="1200px" height="600px"/>
                 </div>
             </div>
             <Paragraph />
@@ -61,6 +61,9 @@ const OurDoctorPage = () => {
             <Footer />
         </Suspense>
     );
+    
 }
+
+
 
 export default OurDoctorPage;

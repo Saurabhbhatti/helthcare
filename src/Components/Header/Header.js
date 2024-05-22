@@ -1,25 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../Header/Header.css';
 import logo from '../../Assets/Image/Icon.jpg';
 
-class NavBar extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      showMenu: false,
-    };
-    this.toggleMenu = this.toggleMenu.bind(this);
-  }
+const NavBar = () => {
+  const [showMenu, setShowMenu] = useState(false);
 
-  toggleMenu() {
-    this.setState((prevState) => ({
-      showMenu: !prevState.showMenu,
-    }));
-  }
-
-  render() {
-  const { showMenu } = this.state;
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
 
   return (
     <>
@@ -28,17 +17,17 @@ class NavBar extends React.Component {
       </p>
       <header className="navbar">
         <div className="logo-container">
-          <img src={logo} alt="Your Logo" className="logo" width="160" height="100px"/>
+          <img src={logo} alt="logo.jpg" className="logo" width="160" height="100" />
         </div>
         <ul className={`nav-links ${showMenu ? 'show' : ''}`}>
-          <li><Link to='/home' onClick={this.toggleMenu}>Home</Link></li>
-          <li><Link to='/howitworks' onClick={this.toggleMenu}>How it Works</Link></li>
-          <li><Link to="/appointments" onClick={this.toggleMenu}>Book a Session</Link></li>
-          <li><Link to="/otcteam" onClick={this.toggleMenu}>OTC Team</Link></li>
-          <li><Link to="/refills" onClick={this.toggleMenu}>Refills</Link></li>
-          <li><Link to="/pricing" onClick={this.toggleMenu}>Pricing</Link></li>
+          <li><Link to='/home' onClick={toggleMenu}>Home</Link></li>
+          <li><Link to='/howitworks' onClick={toggleMenu}>How it Works</Link></li>
+          <li><Link to="/appointments" onClick={toggleMenu}>Book a Session</Link></li>
+          <li><Link to="/otcteam" onClick={toggleMenu}>OTC Team</Link></li>
+          <li><Link to="/refills" onClick={toggleMenu}>Refills</Link></li>
+          <li><Link to="/pricing" onClick={toggleMenu}>Pricing</Link></li>
         </ul>
-        <div className="menu-toggle" onClick={this.toggleMenu}>
+        <div className="menu-toggle" onClick={toggleMenu}>
           <div className={`hamburger-icon ${showMenu ? 'open' : ''}`}>
             <div className="bar"></div>
             <div className="bar"></div>
@@ -48,7 +37,6 @@ class NavBar extends React.Component {
       </header>
     </>
   );
-}
 }
 
 export default NavBar;
