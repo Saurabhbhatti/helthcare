@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Header from "../Components/Header/Header";
 import Footer from "../Components/Footer/Footer";
-import { colors } from "@mui/material";
+import { memo } from "react";
 
 const BodyWrapper = styled.div`
   overflow-x: hidden;
@@ -58,7 +58,6 @@ const InstructionListItem = styled.li`
 
 const VideoWrapper = styled.div`
   margin-top: 20px;
-
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -76,10 +75,14 @@ const VideoContainer = styled.div`
   }
 `;
 
+// Memoizing non-changing components to prevent unnecessary re-renders
+const MemoizedHeader = memo(Header);
+const MemoizedFooter = memo(Footer);
+
 const OurPage = () => {
   return (
     <BodyWrapper>
-      <Header />
+      <MemoizedHeader />
       <Container>
         <Section>
           <Title>Book Initial Assessment and Consultation</Title>
@@ -104,7 +107,7 @@ const OurPage = () => {
           </Paragraph>
         </Section>
         <Section>
-          <Title> How to Draw and Inject Semaglutide?</Title>
+          <Title>How to Draw and Inject Semaglutide?</Title>
           <div>
             <Paragraph>
               Semaglutide is administered subcutaneously via a small injection.
@@ -121,8 +124,8 @@ const OurPage = () => {
               </InstructionListItem>
               <InstructionListItem>Hold vial upside down.</InstructionListItem>
               <InstructionListItem>
-                Uncap the syringe( usually orange in color). Syringes are often
-                capped on both end ( needle and plunger side).
+                Uncap the syringe (usually orange in color). Syringes are often
+                capped on both ends (needle and plunger side).
               </InstructionListItem>
               <InstructionListItem>
                 Pierce the rubber top with syringe.
@@ -142,7 +145,7 @@ const OurPage = () => {
                 Push plunger to injection medication.
               </InstructionListItem>
               <InstructionListItem>
-                Remove needle, recap and dispose of needle.
+                Remove needle, recap, and dispose of needle.
               </InstructionListItem>
             </InstructionList>
             <VideoWrapper>
@@ -151,8 +154,8 @@ const OurPage = () => {
                   width="360"
                   height="315"
                   src="https://www.youtube.com/embed/SjrIit0fYgo"
-                  frameborder="0"
-                  allowfullscreen
+                  frameBorder="0"
+                  allowFullScreen
                 ></iframe>
               </VideoContainer>
               <VideoContainer>
@@ -160,8 +163,8 @@ const OurPage = () => {
                   width="360"
                   height="315"
                   src="https://www.youtube.com/embed/-8KnAmpXXko"
-                  frameborder="0"
-                  allowfullscreen
+                  frameBorder="0"
+                  allowFullScreen
                 ></iframe>
               </VideoContainer>
             </VideoWrapper>
@@ -176,7 +179,7 @@ const OurPage = () => {
           </Paragraph>
         </Section>
       </Container>
-      <Footer />
+      <MemoizedFooter />
     </BodyWrapper>
   );
 };

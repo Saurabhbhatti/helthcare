@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../Header/Header.css';
 import logo from '../../Assets/Image/Icon.jpg';
@@ -10,6 +10,14 @@ const NavBar = () => {
     setShowMenu(!showMenu);
   };
 
+  useEffect(() => {
+    if (showMenu) {
+      document.body.classList.add('no-scroll');
+    } else {
+      document.body.classList.remove('no-scroll');
+    }
+  }, [showMenu]);
+
   return (
     <>
       <p className='disclaimer'>
@@ -17,7 +25,7 @@ const NavBar = () => {
       </p>
       <header className="navbar">
         <div className="logo-container">
-          <img src={logo} alt="logo.jpg" className="logo" width="160" height="100" />
+          <img src={logo} alt="logo" className="logo" width="160" height="100" loading="lazy" />
         </div>
         <ul className={`nav-links ${showMenu ? 'show' : ''}`}>
           <li><Link to='/home' onClick={toggleMenu}>Home</Link></li>

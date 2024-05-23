@@ -2,8 +2,9 @@
   border-top: 2px solid rgb(160, 19, 142);
   margin: auto;
   font-family: "rozha one", serif;
-  font-size: 18px;
+  font-size: 18px;  
   width: 100%;
+  text-align: center;
 }
 
 .navbar {
@@ -15,11 +16,10 @@
   height: 108px;
   position: relative;
   justify-content: space-between; 
+  align-items: center;
 }
 
 .logo-container {
-  display: flex;
-  align-items: center;
   margin-left: 20px; 
 }
 
@@ -28,13 +28,9 @@
   font-size: 16px;
   display: flex;
   align-items: center;
-  justify-content: center;
   border-bottom: 1px solid rgb(234, 242, 246);
   border-top: 1px solid rgb(234, 242, 246);
-  position: absolute;
-  top: 30%;
   right: 10px;
-  transform: translateY(-50%);
   padding: 10px;
 }
 
@@ -72,7 +68,6 @@
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
-  padding-top: 20px;
 }
 
 @media screen and (max-width: 768px) {
@@ -84,18 +79,17 @@
   .nav-links {
     display: none;
     position: absolute;
-    top: 110px;
+    top: 100px;
     left: 0; 
     background-color: rgb(9, 55, 31);
     z-index: 1000;
     border-bottom: none;
     border-top: none;
-    width: 100%; 
+    flex-direction: column;
   }
 
   .nav-links.show {
     display: flex;
-    flex-direction: column;
   }
 
   .nav-links li {
