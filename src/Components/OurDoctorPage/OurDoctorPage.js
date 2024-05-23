@@ -34,7 +34,7 @@ const OurDoctorPage = () => {
     }, []);
 
     return (
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<div></div>}>
             <Header />
             <div className={`Container ${sliderVisible ? 'slider-visible' : ''}`}>
                 <div className='box-first'>
