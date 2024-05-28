@@ -1,7 +1,7 @@
 import style from "./Footer.module.css";
 import React, { useState } from "react";
-import TextField from '@mui/material/TextField';
-import Button from '@mui/material/Button';
+import TextField from "@mui/material/TextField";
+import Button from "@mui/material/Button";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
@@ -18,22 +18,30 @@ const Footer = () => {
             <h1>OTC Body</h1>
           </p>
           <p className={style.paratext}>
-            <span>
-            Division of Fit Body Faster
-            </span>
+            <span>Division of Fit Body Faster</span>
           </p>
-          <div style={{ paddingLeft: '15px', paddingRight: '15px' }}> 
+          <div style={{ paddingLeft: "15px", paddingRight: "15px" }}>
             <TextField
               id="standard-basic"
               label="Email"
               variant="standard"
-              fullWidth 
-              inputProps={{ style: { color: 'white' } }}
-              InputLabelProps={{ style: { color: 'white' } }} />
+              fullWidth
+              inputProps={{ style: { color: "white" } }}
+              InputLabelProps={{ style: { color: "white" } }}
+            />
             <Button
               variant="contained"
               onClick={handleSubmit}
-              style={{ backgroundColor: 'yellow', color: 'black', marginTop: '10px', width: '100%', borderRadius: '50px' }} >Send</Button> {/* Adjusted styling */}
+              style={{
+                backgroundColor: "yellow",
+                color: "black",
+                marginTop: "10px",
+                width: "100%",
+                borderRadius: "50px",
+              }}
+            >
+              Send
+            </Button>
           </div>
           <div>
             <p className={style.paratext} style={{ paddingTop: "20px" }}>
@@ -42,12 +50,15 @@ const Footer = () => {
           </div>
         </div>
 
-        
         <div className={style.footerFlexContent}>
           <ul className={style.footerUL}>
-            <span style={{ fontSize: '18px', color: 'white' }}><b>Social</b></span>
+            <span style={{ fontSize: "18px", color: "white" }}>
+              <b>Social</b>
+            </span>
             <li>
-              <a href="https://www.facebook.com/profile.php?id=61558525813461">Facebook</a>
+              <a href="https://www.facebook.com/profile.php?id=61558525813461">
+                Facebook
+              </a>
             </li>
             <li>
               <a href="#">Pinterest</a>
@@ -63,9 +74,13 @@ const Footer = () => {
 
         <div className={style.footerFlexContent}>
           <ul className={style.footerUL}>
-            <span style={{ fontSize: '18px', color: 'white' }}><b>Contacts</b></span>
-            <li style={{ color: 'white' }}>
-              <span><b>info@otcbody.com</b></span>
+            <span style={{ fontSize: "18px", color: "white" }}>
+              <b>Contacts</b>
+            </span>
+            <li style={{ color: "white" }}>
+              <a href="mailto:info@otcbody.com" className={style.emailLink}>
+                info@otcbody.com
+              </a>
             </li>
           </ul>
         </div>
@@ -75,4 +90,3 @@ const Footer = () => {
 };
 
 export default Footer;
-

@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Container, Grid, Paper, Box} from '@mui/material';
+import { Typography, Container, Grid, Paper, Box } from "@mui/material";
 import Header from "../Components/Header/Header";
 import Footer from "../Components/Footer/Footer";
 import doctor1 from "../Assets/Image/Dr.Mehta.jpg";
@@ -9,13 +9,37 @@ import doctor4 from "../Assets/Image/img3.jpg";
 import doctor5 from "../Assets/Image/img4.jpg";
 
 const DoctorBio = React.memo(({ name, photoUrl, bio }) => (
-  <Paper elevation={3} sx={{ display: 'flex', flexDirection: { xs: 'column', sm: 'row' }, alignItems: 'center', mb: 4, p: 2 }}>
+  <Paper
+    elevation={3}
+    sx={{
+      display: "flex",
+      flexDirection: { xs: "column", sm: "row" },
+      alignItems: "center",
+      mb: 4,
+      p: 2,
+    }}
+  >
     <Box sx={{ flexShrink: 0, mb: { xs: 2, sm: 0 } }}>
-      <img src={photoUrl} alt={name} loading="lazy" style={{ width: 150, height: 200, borderRadius: 8, objectFit: 'cover' }} />
+      <img
+        src={photoUrl}
+        alt={name}
+        loading="lazy"
+        style={{ width: 150, height: 200, borderRadius: 8, objectFit: "cover" }}
+      />
     </Box>
-    <Box sx={{ ml: { sm: 2 }, textAlign: { xs: 'center', sm: 'left' }, fontFamily: '"rozha one", serif' }}>
-      <Typography variant="h5" component="h2" sx={{ mb: 1 }}>{name}</Typography>
-      <Typography variant="body1" component="p">{bio}</Typography>
+    <Box
+      sx={{
+        ml: { sm: 2 },
+        textAlign: { xs: "center", sm: "left" },
+        fontFamily: '"rozha one", serif',
+      }}
+    >
+      <Typography variant="h5" component="h2" sx={{ mb: 1 }}>
+        {name}
+      </Typography>
+      <Typography variant="body1" component="p">
+        {bio}
+      </Typography>
     </Box>
   </Paper>
 ));
@@ -52,7 +76,9 @@ const DoctorApp = () => (
   <>
     <Header />
     <Container sx={{ py: 4 }}>
-      <Typography variant="h4" component="h1" align="center" sx={{ mb: 4 }}>Our Doctors</Typography>
+      <Typography variant="h4" component="h1" align="center" sx={{ mb: 4 }}>
+        Our Team
+      </Typography>
       <Grid container spacing={4}>
         {doctors.map((doctor, index) => (
           <Grid item xs={12} key={index}>

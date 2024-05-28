@@ -41,7 +41,7 @@ const Card = () => {
           <Box>
             <img src={doct2} height='260px' width='100%'/>
             <Typography sx={{ marginTop: "4px" , marginBottom :'10px', fontSize:'16px' , fontFamily: 'rozha one, serif' }}>
-            Sandy Ndetah <br/> Nurse Practioner<br/> Serves patients in New Mexico    
+            Sandy Ndetah <br/> Nurse Practitioner<br/> Serves patients in New Mexico    
             </Typography>
             <AppointmentRequestWidget
                     initialScopeId='b343f131-5bbc-4bb1-bfa4-15530b7fa1fe'
@@ -54,7 +54,7 @@ const Card = () => {
           <Box>
             <img src={doct3} height='260px' width='100%' />
             <Typography sx={{ marginTop: "4px", marginBottom :'10px', fontSize:'16px' , fontFamily: 'rozha one, serif'}}>
-            Dawn Coston<br/>Nurse Practioner<br/>Serves patients in Colorado  
+            Dawn Coston<br/>Nurse Practitioner<br/>Serves patients in Colorado  
             </Typography>
             <AppointmentRequestWidget
                     initialScopeId='153bd7d5-bb4a-4a78-871f-e888c7d3da14'

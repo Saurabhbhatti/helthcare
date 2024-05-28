@@ -45,4 +45,11 @@
 a {
   text-decoration: none;
   color: white;
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+}
+
+a:hover {
+  color: yellow;
+  transform: scale(1.05);
 }
