@@ -13,7 +13,6 @@ const DoctorsBio = lazy(() => import("./pages/DoctorsBio"));
 const Pricing = lazy(() => import("./pages/Pricing"));
 const Blog = lazy(() => import("./pages/BlogPage"));
 const BlogDetails = lazy(() => import("./pages/BlogDetails"));
-const BlogPage = lazy(() => import("./pages/BlogPage"));
 
 function App() {
   return (
@@ -29,8 +28,7 @@ function App() {
             <Route path="/otc-team" element={<DoctorsBio />} />
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/blog" element={<Blog />} />
-            <Route path="/blogpage" element={<BlogPage />} />
-            <Route path="/blog/:id" element={<BlogDetails />} />
+            <Route path="/blog/:slug" element={<BlogDetails />} />
           </Routes>
         </Suspense>
       </Router>

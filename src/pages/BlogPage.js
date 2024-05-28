@@ -4,25 +4,32 @@ import styled from "styled-components";
 import Header from "../Components/Header/Header";
 import Footer from "../Components/Footer/Footer";
 
-const BlogPage = () => {
-  const blogs = [
-    {
-      id: 1,
-      title:
-        "Game-Changing Weight Loss Breakthroughs: Inside Scoop on Semaglutide and Tirzepatide from OTC Body Weight Loss Program",
-      author: "OTC-BODY ",
-      date: "May 2, 2024",
-      // image: "https://example.com/image1.jpg",
-    },
-    {
-      id: 2,
-      title: "Why Doesn’t Semaglutide Work for Me? Comprehensive Guide",
-      author: "OTC-BODY",
-      date: "May 24, 2024",
-      // image: "https://example.com/image2.jpg",
-    },
-  ];
+const generateSlug = (title) => {
+  return title
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+};
 
+const blogs = [
+  {
+    id: 1,
+    title:
+      "Game-Changing Weight Loss Breakthroughs: Inside Scoop on Semaglutide and Tirzepatide from OTC Body Weight Loss Program",
+    author: "OTC-BODY",
+    date: "May 2, 2024",
+    // image: "https://example.com/image1.jpg",
+  },
+  {
+    id: 2,
+    title: "Why Doesn’t Semaglutide Work for Me? Comprehensive Guide",
+    author: "OTC-BODY",
+    date: "May 24, 2024",
+    // image: "https://example.com/image2.jpg",
+  },
+];
+
+const BlogPage = () => {
   return (
     <>
       <Header />
@@ -39,7 +46,8 @@ const BlogPage = () => {
                   <Date>{blog.date}</Date>
                 </BlogMeta>
               </BlogContent>
-              <ReadMore to={`/blog/${blog.id}`}>Read More</ReadMore>
+              {/* Generate slug for the blog */}
+              <ReadMore to={`/blog/${generateSlug(blog.title)}`}>Read More</ReadMore>
             </Blog>
           ))}
         </BlogGrid>

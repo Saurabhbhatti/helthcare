@@ -2,6 +2,13 @@ import React from "react";
 import { useParams, Link } from "react-router-dom";
 import styled from "styled-components";
 
+const generateSlug = (title) => {
+  return title
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+};
+
 const blogs = [
   {
     id: 1,
@@ -237,8 +244,8 @@ const BackButton = styled(Link)`
 `;
 
 const BlogDetails = () => {
-  const { id } = useParams();
-  const blog = blogs.find((blog) => blog.id === parseInt(id));
+  const { slug } = useParams();
+  const blog = blogs.find((blog) => generateSlug(blog.title) === slug);
 
   if (!blog) {
     return <div>Blog not found</div>;
