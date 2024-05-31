@@ -1,7 +1,7 @@
-import style from "./Footer.module.css";
 import React, { useState } from "react";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
+import style from "./Footer.module.css";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
@@ -11,27 +11,26 @@ const Footer = () => {
   };
 
   return (
-    <div className={style.mainfooter}>
+    <footer className={style.mainfooter}>
       <div className={style.footerflex}>
         <div>
-          <p className={style.para}>
-            <h1>OTC Body</h1>
-          </p>
-          <p className={style.paratext}>
-            <span>Division of Fit Body Faster</span>
-          </p>
-          <div style={{ paddingLeft: "15px", paddingRight: "15px" }}>
+          <h1 className={style.para}>OTC Body</h1>
+          <p className={style.paratext}>Division of Fit Body Faster</p>
+          <form onSubmit={handleSubmit} style={{ padding: "0 15px" }}>
             <TextField
               id="standard-basic"
               label="Email"
               variant="standard"
               fullWidth
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               inputProps={{ style: { color: "white" } }}
               InputLabelProps={{ style: { color: "white" } }}
+              aria-label="email"
             />
             <Button
+              type="submit"
               variant="contained"
-              onClick={handleSubmit}
               style={{
                 backgroundColor: "yellow",
                 color: "black",
@@ -42,19 +41,17 @@ const Footer = () => {
             >
               Send
             </Button>
-          </div>
-          <div>
-            <p className={style.paratext} style={{ paddingTop: "20px" }}>
-              © 2024 by OTC Body.
-            </p>
-          </div>
+          </form>
+          <p className={style.paratext} style={{ paddingTop: "20px" }}>
+            © 2024 by OTC Body.
+          </p>
         </div>
 
         <div className={style.footerFlexContent}>
           <ul className={style.footerUL}>
-            <span style={{ fontSize: "18px", color: "white" }}>
-              <b>Social</b>
-            </span>
+            <li>
+              <b style={{ fontSize: "18px", color: "white" }}>Social</b>
+            </li>
             <li>
               <a href="https://www.facebook.com/profile.php?id=61558525813461">
                 Facebook
@@ -74,10 +71,10 @@ const Footer = () => {
 
         <div className={style.footerFlexContent}>
           <ul className={style.footerUL}>
-            <span style={{ fontSize: "18px", color: "white" }}>
-              <b>Contacts</b>
-            </span>
-            <li style={{ color: "white" }}>
+            <li>
+              <b style={{ fontSize: "18px", color: "white" }}>Contacts</b>
+            </li>
+            <li>
               <a href="mailto:info@otcbody.com" className={style.emailLink}>
                 info@otcbody.com
               </a>
@@ -85,7 +82,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 

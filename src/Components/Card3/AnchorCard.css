@@ -1,8 +1,11 @@
 body {
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
+
 .background {
-  font-family: "rozha one", serif;
+  font-family: "Rozha One", serif;
   width: 100vw;
   height: 500px;
   background-size: cover;
@@ -10,7 +13,7 @@ body {
   position: relative;
 }
 
-  .card3 {
+.card3 {
   background-color: rgb(242, 237, 219);
   text-align: center;
   width: 100%;
@@ -35,10 +38,10 @@ body {
   max-width: 80%;
   margin: 0 auto;
 }
-  
-  .upper-content {
-    padding: 20px;
-  }
+
+.upper-content {
+  padding: 20px;
+}
 
 .lower-content {
   width: auto;
@@ -84,10 +87,11 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-    .background{
+  .background {
     height: 450px;
   }
-    .card3 {
+
+  .card3 {
     padding-top: 20px;
     width: 95%;
     height: 300px;

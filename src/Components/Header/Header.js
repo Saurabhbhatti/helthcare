@@ -37,41 +37,21 @@ const NavBar = () => {
           </Link>
         </div>
         <ul className={`nav-links ${showMenu ? "show" : ""}`}>
-          <li>
-            <Link to="/home" onClick={toggleMenu}>
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link to="/appointments" onClick={toggleMenu}>
-              Book a Session
-            </Link>
-          </li>
-          <li>
-            <Link to="/otc-team" onClick={toggleMenu}>
-              OTC Team
-            </Link>
-          </li>
-          <li>
-            <Link to="/how-it-works" onClick={toggleMenu}>
-              How it Works
-            </Link>
-          </li>
-          <li>
-            <Link to="/refills" onClick={toggleMenu}>
-              Refills
-            </Link>
-          </li>
-          <li>
-            <Link to="/pricing" onClick={toggleMenu}>
-              Pricing
-            </Link>
-          </li>
-          <li>
-            <Link to="/blog" onClick={toggleMenu}>
-              Blog
-            </Link>
-          </li>
+          {[
+            "home",
+            "appointments",
+            "otc-team",
+            "how-it-works",
+            "refills",
+            "pricing",
+            "blog",
+          ].map((link) => (
+            <li key={link}>
+              <Link to={`/${link}`} onClick={toggleMenu}>
+                {link.charAt(0).toUpperCase() + link.slice(1).replace("-", " ")}
+              </Link>
+            </li>
+          ))}
         </ul>
         <div className="menu-toggle" onClick={toggleMenu}>
           <div className={`hamburger-icon ${showMenu ? "open" : ""}`}>

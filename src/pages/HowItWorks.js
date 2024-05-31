@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Header from "../Components/Header/Header";
 import Footer from "../Components/Footer/Footer";
-import { memo } from "react";
+import { memo, useEffect } from "react";
 
 const BodyWrapper = styled.div`
   overflow-x: hidden;
@@ -79,7 +79,19 @@ const VideoContainer = styled.div`
 const MemoizedHeader = memo(Header);
 const MemoizedFooter = memo(Footer);
 
+const loadExternalResources = () => {
+  const link = document.createElement("link");
+  link.href =
+    "https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap";
+  link.rel = "stylesheet";
+  document.head.appendChild(link);
+};
+
 const OurPage = () => {
+  useEffect(() => {
+    loadExternalResources();
+  }, []);
+
   return (
     <BodyWrapper>
       <MemoizedHeader />
@@ -156,6 +168,7 @@ const OurPage = () => {
                   src="https://www.youtube.com/embed/SjrIit0fYgo"
                   frameBorder="0"
                   allowFullScreen
+                  loading="lazy"
                 ></iframe>
               </VideoContainer>
               <VideoContainer>
@@ -165,6 +178,7 @@ const OurPage = () => {
                   src="https://www.youtube.com/embed/-8KnAmpXXko"
                   frameBorder="0"
                   allowFullScreen
+                  loading="lazy"
                 ></iframe>
               </VideoContainer>
             </VideoWrapper>

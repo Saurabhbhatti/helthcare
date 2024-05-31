@@ -1,8 +1,9 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import Header from "../Components/Header/Header";
-import Footer from "../Components/Footer/Footer";
+
+const Header = React.lazy(() => import("../Components/Header/Header"));
+const Footer = React.lazy(() => import("../Components/Footer/Footer"));
 
 const generateSlug = (title) => {
   return title
@@ -32,13 +33,15 @@ const blogs = [
 const BlogPage = () => {
   return (
     <>
-      <Header />
+      <Suspense fallback={<div></div>}>
+        <Header />
+      </Suspense>
       <Container>
         <Title>Latest Blogs</Title>
         <BlogGrid>
           {blogs.map((blog) => (
             <Blog key={blog.id}>
-              {/* <Thumbnail src={blog.image} alt="Thumbnail" /> */}
+              {/* <Thumbnail src={blog.image} alt="Thumbnail" loading="lazy" /> */}
               <BlogContent>
                 <BlogTitle>{blog.title}</BlogTitle>
                 <BlogMeta>
@@ -46,13 +49,16 @@ const BlogPage = () => {
                   <Date>{blog.date}</Date>
                 </BlogMeta>
               </BlogContent>
-              {/* Generate slug for the blog */}
-              <ReadMore to={`/blog/${generateSlug(blog.title)}`}>Read More</ReadMore>
+              <ReadMore to={`/blog/${generateSlug(blog.title)}`}>
+                Read More
+              </ReadMore>
             </Blog>
           ))}
         </BlogGrid>
       </Container>
-      <Footer />
+      <Suspense fallback={<div></div>}>
+        <Footer />
+      </Suspense>
     </>
   );
 };
@@ -100,7 +106,7 @@ const BlogContent = styled.div`
 const BlogTitle = styled.h3`
   margin-bottom: 10px;
   font-size: 1.2rem;
-  color: #555;
+  color: #333;
 `;
 
 const BlogMeta = styled.div`
@@ -115,6 +121,7 @@ const Author = styled.span`
 
 const Date = styled.span`
   font-size: 0.8rem;
+  color: #999;
 `;
 
 const ReadMore = styled(Link)`
@@ -128,8 +135,8 @@ const ReadMore = styled(Link)`
   transition: background-color 0.3s ease, transform 0.2s ease;
 
   &:hover {
-    background-color: #fff;
-    color: #000;
+    background-color: #ffffff;
+    color: #000000;
     transform: translateY(-2px);
   }
 

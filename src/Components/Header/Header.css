@@ -2,7 +2,7 @@
   border-top: 2px solid rgb(160, 19, 142);
   margin: auto;
   font-family: "rozha one", serif;
-  font-size: 18px;  
+  font-size: 18px;
   width: 100%;
   text-align: center;
 }
@@ -15,12 +15,12 @@
   width: 100%;
   height: 108px;
   position: relative;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: center;
 }
 
 .logo-container {
-  margin-left: 20px; 
+  margin-left: 20px;
 }
 
 .nav-links {
@@ -32,6 +32,7 @@
   border-top: 1px solid rgb(234, 242, 246);
   right: 10px;
   padding: 10px;
+  margin: 0;
 }
 
 .nav-links li {
@@ -55,19 +56,33 @@
 }
 
 .bar {
-  width: 100%;
+  width: 30px;
   height: 3px;
   background-color: white;
   transition: all 0.3s ease;
 }
 
 .hamburger-icon {
-  width: 30px;
-  height: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  cursor: pointer;
+  height: 20px;
+}
+
+.hamburger-icon.open .bar:nth-child(1) {
+  transform: rotate(45deg);
+  top: 8px;
+  position: relative;
+}
+
+.hamburger-icon.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-icon.open .bar:nth-child(3) {
+  transform: rotate(-45deg);
+  top: -8px;
+  position: relative;
 }
 
 @media screen and (max-width: 768px) {
@@ -80,12 +95,12 @@
     display: none;
     position: absolute;
     top: 100px;
-    left: 0; 
+    left: 0;
     background-color: rgb(9, 55, 31);
     z-index: 1000;
-    border-bottom: none;
-    border-top: none;
+    border: none;
     flex-direction: column;
+    width: 100%;
   }
 
   .nav-links.show {

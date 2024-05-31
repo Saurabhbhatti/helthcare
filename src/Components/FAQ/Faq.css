@@ -1,4 +1,3 @@
-/* Faq.css */
 .faq {
   max-width: 800px;
   margin: 0 auto;
@@ -7,12 +6,12 @@
 
 .faq-title {
   text-align: center;
-  font-size: 32px;
-  margin-bottom: 30px;
+  font-size: 2rem;
+  margin-bottom: 2rem;
 }
 
 .faq-dropdown {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -22,9 +21,10 @@
 .faq-header {
   display: flex;
   align-items: center;
-  padding: 15px;
+  padding: 1rem;
   background-color: #f8f8f8;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .faq-header:hover {
@@ -34,7 +34,7 @@
 .question {
   flex: 1;
   margin: 0;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .arrow {
@@ -42,7 +42,7 @@
   height: 0;
   border-style: solid;
   border-width: 6px 5px 0 5px;
-  transition: transform 0.3s;
+  transition: transform 0.3s ease;
 }
 
 .arrow.up {
@@ -55,11 +55,12 @@
 }
 
 .faq-content {
-  padding: 15px;
+  padding: 1rem;
+  background-color: #fff;
 }
 
 .answer {
   margin: 0;
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #333;
 }

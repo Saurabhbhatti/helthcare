@@ -1,8 +1,8 @@
 import React from "react";
 import "./Cards.css";
 import card1 from "../../Assets/Image/card1-img1.jpg";
-import Card2 from "../../Assets/Image/card1-img2.jpg";
-import Card3 from "../../Assets/Image/card1-img3.jpg";
+import card2 from "../../Assets/Image/card1-img2.jpg";
+import card3 from "../../Assets/Image/card1-img3.jpg";
 import { useNavigate } from "react-router-dom";
 
 const Card = ({ imageUrl, description, secondDescription }) => {
@@ -15,11 +15,11 @@ const Card = ({ imageUrl, description, secondDescription }) => {
     <div className="card2">
       <div className="card-content">
         <div className="card-image2">
-          <img src={imageUrl} alt="Card" />
+          <img src={imageUrl} alt="Card" loading="lazy" />
         </div>
         <div className="card-description2">
-          <p style={{fontSize:'17px', margin:'0px'}}>{description}</p>
-          <p style={{fontSize:'13px'}}>{secondDescription}</p>
+          <p className="description2">{description}</p>
+          <p className="second-description2">{secondDescription}</p>
           <button className="card-button2" onClick={handleButtonClick}>
             Learn More
           </button>
@@ -38,13 +38,13 @@ const Cards = () => {
         "Experience our Compound Semaglutide Weight Loss Program - a comprehensive, personalized service integrating medication, nutrition counseling, exercise guidance, and ongoing support for effective and sustainable Weight Loss."
     },
     {
-      imageUrl: Card2,
+      imageUrl: card2,
       description: "Meal Replacement Program",
       secondDescription:
         "Revitalize with our Meal Replacement Program - a convenient, nutritious solution featuring balanced meals, expert guidance, and continuous monitoring for successful weight management and improved well-being."
     },
     {
-      imageUrl: Card3,
+      imageUrl: card3,
       description: "Managed Weight Loss Program",
       secondDescription:
         "Embark on our Managed Weight Loss Program - a tailored journey combining medical supervision, personalized nutrition plans, fitness strategies, and ongoing support for achieving your weight goals effectively and sustainably.",
@@ -57,9 +57,7 @@ const Cards = () => {
   return (
     <div>
       <div className="card-container2">
-        <h2 style={{ fontSize: "40px", color: "rgb(9,55,31)" }}>
-          Our Services
-        </h2>
+        <h2 className="header">Our Services</h2>
       </div>
       <div className="card-container2">
         {firstRowCards.map((card, index) => (

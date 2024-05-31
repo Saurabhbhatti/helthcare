@@ -1,37 +1,35 @@
 .mainfooter {
-  height: auto;
-  width: auto;
   background-color: rgb(9, 55, 31);
-  padding: 10px;
+  padding: 20px;
 }
 
 .para {
-  font-family: "rozha one", serif;
+  font-family: "Rozha One", serif;
   font-size: 18px;
   color: white;
   line-height: 1.5;
-  padding-left: 15px; 
+  margin: 0;
 }
 
 .paratext {
-  font-family: "rozha one", serif;
+  font-family: "Rozha One", serif;
   font-size: 16px;
   color: white;
   line-height: 1.5;
-  padding-left: 15px; 
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .footerflex {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; 
+  justify-content: center;
+  gap: 20px;
 }
 
 .footerFlexContent {
-  padding: 0 10px;
-  flex: 1; 
-  max-width: 200px; 
+  flex: 1;
+  max-width: 200px;
+  padding: 10px;
 }
 
 .footerUL {
@@ -39,7 +37,8 @@
   font-size: 16px;
   line-height: 2;
   text-align: center;
-  padding-top: 20px;
+  padding: 0;
+  margin: 0;
 }
 
 a {

@@ -1,37 +1,38 @@
 .para-container {
-  background-color: rgb(251, 251, 243);
+  background-color: #fbfbf3;
   font-family: "rozha one", serif;
   width: 100%;
-  height: auto;
   text-align: center;
+  padding: 20px 10px;
+  box-sizing: border-box;
 }
 
 .para-text {
   line-height: 1.5;
-  color:rgb(9,55,31);
-  font-size: 36px;
-  margin-top: 0px;
-  padding-top: 50px;
+  color: #09371f;
+  font-size: 2.25rem;
+  margin: 0;
+  padding-top: 3rem;
 }
 
 .para-text-item {
-  color: rgb(9,55,31);
-  font-size: 14px;
+  color: #09371f;
+  font-size: 1rem;
   line-height: 1.5;
-  max-width: 80%; 
+  max-width: 80%;
   margin: 0 auto;
-  text-align:center; 
-  padding-bottom: 30px; 
+  text-align: center;
+  padding-bottom: 2rem;
 }
 
 @media only screen and (max-width: 600px) {
   .para-text {
-    font-size: 24px; 
-    padding-top: 30px; 
+    font-size: 1.5rem;
+    padding-top: 2rem;
   }
 
   .para-text-item {
-    font-size: 12px; 
-    padding-bottom: 20px; 
+    font-size: 0.875rem;
+    padding-bottom: 1.25rem;
   }
 }

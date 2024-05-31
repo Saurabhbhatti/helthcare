@@ -3,6 +3,7 @@
   flex-direction: column;
   font-family: "rozha one", serif;
   width: 100%;
+  transition: background-color 0.5s;
 }
 
 .box-first {
@@ -12,7 +13,7 @@
   align-items: center;
   padding-top: 30px;
   background-color: rgb(234, 242, 246);
-  animation: slideIn 5s ease-in-out;
+  animation: slideIn 3s ease-in-out;
   color: rgb(9, 55, 31);
   min-height: 200px;
 }

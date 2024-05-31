@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import { Typography, Container, Grid, Paper, Box } from "@mui/material";
 import Header from "../Components/Header/Header";
 import Footer from "../Components/Footer/Footer";
@@ -91,4 +91,4 @@ const DoctorApp = () => (
   </>
 );
 
-export default DoctorApp;
+export default React.memo(DoctorApp);

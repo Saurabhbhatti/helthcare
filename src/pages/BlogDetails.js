@@ -147,11 +147,7 @@ const BlogDetailsWrapper = styled.div`
   max-width: 100%;
   margin: 0 auto;
   padding: 20px;
-  fontfamily: '"rozha one", serif';
-  ${
-    "" /* background-color: #f9f9f9;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
-  }
+  font-family: "rozha one", serif;
   border-radius: 10px;
   text-align: left;
 `;
