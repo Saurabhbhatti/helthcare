@@ -1,5 +1,6 @@
-import React, { Suspense, lazy } from "react";
-import { Typography, Container, Grid, Paper, Box } from "@mui/material";
+import React, { useState, useEffect } from "react";
+import { Typography, Container, Grid, Paper, Box, CircularProgress } from "@mui/material";
+import { styled } from "@mui/system";
 import Header from "../Components/Header/Header";
 import Footer from "../Components/Footer/Footer";
 import doctor1 from "../Assets/Image/Dr.Mehta.jpg";
@@ -7,6 +8,20 @@ import doctor2 from "../Assets/Image/Dr. Schubhe.jpg";
 import doctor3 from "../Assets/Image/img2.jpg";
 import doctor4 from "../Assets/Image/img3.jpg";
 import doctor5 from "../Assets/Image/img4.jpg";
+
+const ContainerStyled = styled(Box)(({ theme }) => ({
+  minHeight: "100vh",
+  display: "flex",
+  flexDirection: "column",
+}));
+
+const ContentStyled = styled(Box)(({ theme }) => ({
+  flex: "1 0 auto",
+}));
+
+const FooterStyled = styled(Footer)(({ theme }) => ({
+  flexShrink: 0,
+}));
 
 const DoctorBio = React.memo(({ name, photoUrl, bio }) => (
   <Paper
@@ -72,23 +87,41 @@ const doctors = [
   },
 ];
 
-const DoctorApp = () => (
-  <>
-    <Header />
-    <Container sx={{ py: 4 }}>
-      <Typography variant="h4" component="h1" align="center" sx={{ mb: 4 }}>
-        Our Team
-      </Typography>
-      <Grid container spacing={4}>
-        {doctors.map((doctor, index) => (
-          <Grid item xs={12} key={index}>
-            <DoctorBio {...doctor} />
-          </Grid>
-        ))}
-      </Grid>
-    </Container>
-    <Footer />
-  </>
-);
+const DoctorApp = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+  }, []);
+
+  return (
+    <ContainerStyled>
+      <Header />
+      <ContentStyled>
+        <Container sx={{ py: 4 }}>
+          <Typography variant="h4" component="h1" align="center" sx={{ mb: 4 }}>
+            Our Team
+          </Typography>
+          {loading ? (
+            <Box sx={{ display: 'flex', justifyContent: 'center', my: 4 }}>
+              <CircularProgress />
+            </Box>
+          ) : (
+            <Grid container spacing={4}>
+              {doctors.map((doctor, index) => (
+                <Grid item xs={12} key={index}>
+                  <DoctorBio {...doctor} />
+                </Grid>
+              ))}
+            </Grid>
+          )}
+        </Container>
+      </ContentStyled>
+      <FooterStyled />
+    </ContainerStyled>
+  );
+};
 
 export default React.memo(DoctorApp);
