@@ -1,0 +1,97 @@
+@import url('../../fonts/fonts.css');
+
+.semaglutid-container-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20px; 
+}
+
+.glp-container {
+  margin-bottom: 20px;
+}
+
+.glp-img {
+  width: 100%; 
+  max-width: 200px;
+  height: auto; 
+  max-height: 200px;
+}
+
+.semaglutid-content {
+  text-align: center;
+}
+
+.semaglutid-heading {
+  font-size: 24px; 
+  color: black;
+  font-family: "Khand-bold";
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.semaglutid-subText {
+  font-family: "Arial";
+  font-size: 16px; 
+  color: rgb(9, 55, 31);
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .semaglutid-container-top {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1200px;
+    align-items: center;
+  }
+
+  .glp-img {
+    width: 150vh;
+    max-width: 100%;
+    height: 250px;
+    max-height: 100%;
+  }
+
+  .semaglutid-heading {
+    font-size: 40px;
+    text-align: left;
+    margin-top: 0;
+  }
+
+  .semaglutid-subText {
+    font-size: 22px;
+    text-align: left;
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .semaglutid-container-top {
+    /* Center align items when screen width is less than 768px */
+    align-items: center;
+  }
+
+  .semaglutid-heading {
+    font-size: 20px;
+  }
+
+  .semaglutid-subText {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .glp-img {
+    max-width: 150px; 
+    max-height: 150px; 
+  }
+
+  .semaglutid-heading {
+    font-size: 18px;
+    margin: 0;
+  }
+
+  .semaglutid-subText {
+    font-size: 12px;
+  }
+}

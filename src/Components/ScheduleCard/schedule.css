@@ -1,0 +1,137 @@
+.schedule-cards {
+  background-color: #cdded8;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.schedule-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #cdded8;
+}
+
+.schedule-main-card {
+  display: flex;
+  flex-direction: row;
+  background: linear-gradient(to right, #57a9bc, #0a7897);
+  width: 600px;
+  max-width: 100%;
+  padding: 8px 20px;
+  justify-content: space-between;
+  align-items: center;
+  transform: skew(-3deg);
+}
+
+.schedule-step {
+  text-align: left;
+  margin: 30px 0 5px 25px;
+  font-size: 18px;
+}
+
+.schedule-heading {
+  position: absolute;
+  top: 20px;
+  left: 90px;
+  z-index: 9;
+  background-color: #fded00;
+  transform: skew(-10deg);
+  padding: 2px 15px;
+  font-weight: 500;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.schedule-heading-sub {
+  font-family: 'Khand-SemiBold';
+}
+
+.schedule-desc-image {
+  min-width: 86px;
+}
+
+.schedule-desc-image > img {
+  transform: skew(3deg);
+  height: 80px;
+}
+
+.schedule-description {
+  font-family: 'Khand-Medium';
+  transform: skew(3deg);
+  color: white;
+  font-size: 22px;
+  text-align: left;
+  font-weight: 500;
+  padding: 15px;
+}
+
+.schedule-card-right {
+  height: 100%;
+  padding-top: 30px;
+  margin-left: -50px;
+}
+
+@media (max-width: 1200px) {
+  .card-container4 {
+    gap: 90px;
+  }
+  .schedule-cards {
+    background-color: #cdded8;
+    padding-left: 100px;
+    display: block;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 786px) {
+  .schedule-card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #cdded8;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 50px;
+  }
+  .schedule-cards {
+    background-color: #cdded8;
+    padding: 100px 0;
+    display: block;
+    justify-content: center;
+  }
+  .card-container4 {
+    gap: 30px;
+  }
+
+  .schedule-description {
+    font-size: 18px;
+  }
+
+  .schedule-main-card {
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(to right, #57a9bc, #0a7897);
+    width: 100%;
+    padding: 8px 20px;
+    justify-content: space-between;
+    align-items: center;
+    transform: skew(-3deg);
+  }
+
+  .schedule-heading {
+    font-size: 16px;
+    position: relative;
+    top: 17px;
+    left: 6px;
+    z-index: 9;
+    margin: 0;
+  }
+
+  .schedule-step {
+    font-weight: 500;
+    margin-top: 15px;
+    margin-bottom: 0;
+    text-align: center;
+  }
+}

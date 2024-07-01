@@ -1,0 +1,31 @@
+{
+  "appointmentCardsData": [
+    {
+      "imageUrl": "DR_JAIMEE_USSERY",
+      "name": "Jaimee ussery",
+      "description": "Serves patients in Iowa",
+      "post": "Nurse Practitioner",
+      "scopeId": "7c019d46-6fb2-4a42-9d25-253151e62ac2",
+      "scopeUrl": "jaimee-ussery5125",
+      "applicationId": "7c72cb9f9a9b913654bb89d6c7b4e71a77911b30192051da35384b4d0c6d505b"
+    },
+    {
+      "imageUrl": "USER_PLACEHOLDER",
+      "name": "Teresa Rice, CRNP",
+      "description": "Serves patients in New Mexico",
+      "post": "Nurse Practitioner",
+      "scopeId": "b343f131-5bbc-4bb1-bfa4-15530b7fa1fe",
+      "scopeUrl": "sandy-ndetah",
+      "applicationId": "7c72cb9f9a9b913654bb89d6c7b4e71a77911b30192051da35384b4d0c6d505b"
+    },
+    {
+      "imageUrl": "DR_DAWN_COSTON",
+      "name": "Dawn coston",
+      "description": "Serves patients in Colorado",
+      "post": "Nurse Practitioner",
+      "scopeId": "153bd7d5-bb4a-4a78-871f-e888c7d3da14",
+      "scopeUrl": "dawn-coston6627",
+      "applicationId": "7c72cb9f9a9b913654bb89d6c7b4e71a77911b30192051da35384b4d0c6d505b"
+    }
+  ]
+}

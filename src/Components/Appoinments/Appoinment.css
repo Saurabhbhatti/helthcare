@@ -1,9 +1,48 @@
+@import url('../../fonts/fonts.css');
+
 .card-container4 {
   display: flex;
   flex-wrap: wrap;
-  background-color: rgb(251, 251, 243);
-  font-family: "rozha one", serif;
   justify-content: center;
+  background-color: #056887;
+  font-family: 'rozha one', serif;
+  gap: 150px;
+  padding-bottom: 50px;
+}
+
+#nurse-section {
+  background-color: #056887;
+}
+
+.appoint-req-btn {
+  display: flex;
+  justify-content: center;
+  padding: 5px 0;
+}
+
+.card-container4 > .card-main {
+  background: #daede9;
+  border-radius: 50% 50% 20px 20px;
+  padding-bottom: 20px;
+}
+
+.card-container4 > .card-main > .card-post {
+  color: #074b5b;
+  line-height: normal;
+  font-family: 'Khand-Medium';
+}
+
+.card-container4 > .card-main > .card-desc {
+  color: #1d728b;
+  background-color: transparent;
+  font-family: 'Khand-SemiBold';
+}
+
+.card-img {
+  width: 254px;
+  border-radius: 50%;
+  border: 5px solid #feed00;
+  box-shadow: 3px 3px 20px gray;
 }
 
 .card4 {
@@ -20,9 +59,30 @@
 }
 
 .card-image4 img {
-  width: 100%;
-  height: 100%;
   object-fit: cover;
+}
+
+.user-icon-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.user-icon {
+  background-color: transparent;
+  padding: 0 0 10px 0;
+  border-radius: 0;
+}
+
+.paragraph-heading-booking {
+  color: white;
+  font-weight: 400;
+  background-color: #056887;
+  margin: 0;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  font-family: 'Khand-Regular';
 }
 
 .card-description4 {
@@ -75,8 +135,39 @@
   color: #333;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 786px) {
+  .card-container4 {
+    flex-direction: column;
+    align-content: center;
+    gap: 25px;
+  }
+
   .card4 {
     width: 90%;
+  }
+
+  .paragraph-heading-booking {
+    font-size: 24px;
+  }
+
+  .card-container4 > .card-main {
+    width: 156px;
+  }
+
+  .card-container4 .card-main > .card-name {
+    font-size: 18px;
+  }
+
+  .card-container4 .card-main > .card-post {
+    font-size: 16px;
+  }
+
+  .card-container4 .card-main > .card-desc {
+    font-size: 14px;
+  }
+
+  .card-container4 .card-img {
+    width: 150px;
+    height: 150px;
   }
 }

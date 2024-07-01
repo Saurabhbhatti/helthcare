@@ -1,0 +1,221 @@
+.blog-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.blog-content {
+  display: flex;
+  justify-content: row;
+}
+.blog-heading {
+  text-transform: uppercase;
+  font-size: 40px;
+  color: #18242c;
+  font-family: 'Khand-bold';
+}
+.blog-card-container {
+  background: linear-gradient(135deg, #0f97bd, #035469);
+  box-shadow: 0 4px 6px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  padding: 20px;
+  height: 250px;
+  width: 420px;
+  border-radius: 20px;
+  border-color: white;
+  justify-content: center;
+}
+.blog-header {
+  color: yellow;
+  font-size: 30px;
+  text-align: right;
+  font-family: 'Inter-Ui-BlackItalic';
+}
+.blog-header-textTransform {
+  text-transform: uppercase;
+}
+.discover-container {
+  justify-content: space-between;
+  display: flex;
+}
+
+.blog-subcontent {
+  color: white;
+  font-size: 20px;
+  text-align: right;
+  font-family: 'Inter-Ui-BlackItalic';
+}
+.blog-meta-content {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.blog-meta {
+  color: yellow;
+  font-size: 18px;
+  font-family: 'Inkfree';
+}
+.read-more-button {
+  color: #18242c;
+  background-color: yellow;
+  padding: 5px 10px;
+  font-size: 18px;
+  max-width: fit-content;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Inter-Ui-BlackItalic';
+  cursor: pointer;
+}
+.button-container {
+  justify-content: center;
+  display: flex;
+}
+.blog-group {
+  display: flex;
+  flex-direction: row;
+}
+.blog-card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 50px;
+  width: 1000px;
+}
+.discover-blog-img {
+  object-fit: cover;
+  height: 300px;
+  width: 1000px;
+  border-radius: 20px;
+}
+.blog-img {
+  height: 200px;
+  width: 100px;
+  object-fit: cover;
+}
+.blog-overlay-text {
+  position: absolute;
+  top: 23%;
+  left: 73%;
+  width: 200px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: right;
+  font-family: 'Inter-Ui-BlackItalic';
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.blog-dicover-meta-contain {
+  position: absolute;
+  bottom: 60px;
+  left: 10px;
+  right: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: white;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.read-more-discover {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blog-discover-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.discover-blog-meta {
+  color: black;
+  font-weight: 600;
+  font-size: 16px;
+}
+.discover-blog-container {
+  padding: 0px;
+  height: 300px;
+  width: 460px;
+}
+.discover-blog-content {
+  position: relative;
+}
+.latest-blog-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .read-more-button {
+    font-size: 15px;
+  }
+  .blog-card-container {
+    background: linear-gradient(135deg, #0f97bd, #035469);
+    box-shadow: 0 4px 6px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    padding: 20px;
+    height: 200px;
+    width: 320px;
+    border-radius: 20px;
+    border-color: white;
+    justify-content: center;
+  }
+  .blog-card {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .blog-img {
+    height: 120px;
+    width: 120px;
+    object-fit: cover;
+  }
+  .blog-header {
+    color: yellow;
+    font-size: 22px;
+    text-align: right;
+    font-family: 'Inter-Ui-BlackItalic';
+  }
+
+  .blog-subcontent {
+    color: white;
+    font-size: 18px;
+    text-align: right;
+    font-family: 'Inter-Ui-BlackItalic';
+  }
+
+  .discover-blog-img {
+    object-fit: cover;
+    height: 250px;
+    border-radius: 20px;
+  }
+
+  .discover-blog-container {
+    padding: 0px;
+    height: 250px;
+    width: 350px;
+  }
+
+  .blog-overlay-text {
+    position: absolute;
+    top: 25%;
+    left: 68%;
+  }
+  .blog-heading {
+    font-size: 20px;
+  }
+  .latest-blog-container {
+    margin: 30px;
+  }
+}

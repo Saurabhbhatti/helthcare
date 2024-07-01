@@ -1,0 +1,108 @@
+.faq-container-custom {
+    background-color: #cdded8;
+  }
+  
+  .faq-custom {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #cdded8;
+  }
+  
+  .faq-title-custom {
+    font-family: 'Khand-Bold';
+    text-align: center;
+    font-size: 42px;
+    margin: 0;
+    padding: 20px 0 0;
+    color: #004556;
+    text-transform: uppercase;
+    background-color: #cdded8;
+  }
+  
+  .faq-title-custom > img {
+    width: 100px;
+    margin-left: -20px;
+  }
+  
+  .faq-dropdown-custom {
+    margin-bottom: 1.25rem;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .faq-dropdown-open-custom {
+    margin-bottom: 1.25rem;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .faq-header-custom {
+    display: flex;
+    align-items: center;
+    padding: 7px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .faq-header-open-custom {
+    transition: background-color 0.3s ease;
+    background-color: #004556;
+    cursor: pointer;
+  }
+  
+  .question-custom {
+    font-family: 'arial';
+    flex: 1;
+    margin: 0;
+    font-size: 1.125rem;
+    color: #004556;
+  }
+  
+  .question-open-custom {
+    font-family: 'arial';
+    color: white;
+    margin: 0;
+    padding: 10px 0;
+  }
+  
+  .arrow-custom {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 5px 0 5px;
+    transition: transform 0.3s ease;
+  }
+  
+  .arrow.up-custom {
+    border-color: #000 transparent transparent transparent;
+    transform: rotate(180deg);
+  }
+  
+  .arrow.down-custom {
+    border-color: transparent transparent #000 transparent;
+  }
+  
+  .faq-content-custom {
+    padding: 1rem;
+    background-color: #fff;
+    color: #004556;
+  }
+  
+  .answer-custom {
+    font-family: 'arial';
+    margin: 0;
+    font-size: 1.125rem;
+  }
+  
+  @media (max-width: 786px) {
+    .faq-title-custom {
+      font-size: 24px;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      padding: 0;
+    }
+  }
+  

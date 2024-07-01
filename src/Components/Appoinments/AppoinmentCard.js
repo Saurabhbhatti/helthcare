@@ -1,74 +1,34 @@
 import React from "react";
 import "./Appoinment.css";
-import card1 from "../../Assets/Image/img2.jpg";
-import card2 from "../../Assets/Image/img3.jpg";
-import card3 from "../../Assets/Image/img4.jpg";
-import AppointmentRequestWidget from "./Appoinment";
-
-const AppointmentCard = ({ imageUrl, description, scopeId, scopeUrl, applicationId }) => {
-  return (
-    <div className="card4">
-      <div className="card-image4">
-        <img src={imageUrl} alt="Doc-img" />
-      </div>
-      <div className="card-description4">
-        <p>{description}</p>
-        <AppointmentRequestWidget
-          initialScopeId={scopeId}
-          initialScopeUrl={scopeUrl}
-          initialApplicationId={applicationId}
-        />
-      </div>
-    </div>
-  );
-};
+import { appointmentCardsData } from "../../helper/content.js";
+import * as assets from "../../helper/assets.js";
+import PractionerCard from "../practionerCard/PractionerCard";
+import AppointmentRequestWidget from "./Appoinment.js";
 
 const AppointmentCards = () => {
-  const cardsData = [
-    {
-      imageUrl: card1,
-      description: "Jaimee Ussery, Nurse Practitioner, Serves patients in Iowa",
-      scopeId: "7c019d46-6fb2-4a42-9d25-253151e62ac2",
-      scopeUrl: "jaimee-ussery5125",
-      applicationId: "7c72cb9f9a9b913654bb89d6c7b4e71a77911b30192051da35384b4d0c6d505b",
-    },
-    {
-      imageUrl: card2,
-      description: "Sandy Ndetah, Nurse Practitioner, Serves patients in New Mexico",
-      scopeId: "b343f131-5bbc-4bb1-bfa4-15530b7fa1fe",
-      scopeUrl: "sandy-ndetah",
-      applicationId: "7c72cb9f9a9b913654bb89d6c7b4e71a77911b30192051da35384b4d0c6d505b",
-    },
-    {
-      imageUrl: card3,
-      description: "Dawn Coston, Nurse Practitioner, Serves patients in Colorado",
-      scopeId: "153bd7d5-bb4a-4a78-871f-e888c7d3da14",
-      scopeUrl: "dawn-coston6627",
-      applicationId: "7c72cb9f9a9b913654bb89d6c7b4e71a77911b30192051da35384b4d0c6d505b",
-    },
-  ];
-
   return (
     <>
       <div className="card-container4">
-        {cardsData.map((card, index) => (
-          <AppointmentCard
-            key={index}
-            imageUrl={card.imageUrl}
-            description={card.description}
-            scopeId={card.scopeId}
-            scopeUrl={card.scopeUrl}
-            applicationId={card.applicationId}
-          />
+        {appointmentCardsData?.appointmentCardsData?.map((card, index) => (
+          <div key={index} className='card-main' >
+            <PractionerCard
+              img={assets[card.imageUrl]}
+              name={card.name}
+              post={card.post}
+              desc={card.description}
+            />
+            <div className="appoint-req-btn">
+              <AppointmentRequestWidget
+                initialScopeId={card.scopeId}
+                initialScopeUrl={card.scopeUrl}
+                initialApplicationId={card.applicationId}
+              />
+            </div>
+          </div>
         ))}
-      </div>
-      <div className="coming-soon-container">
-        <p className="coming-soon-text">Coming soon....</p>
-        <p className="coming-soon-subtext">Stay tuned for the Robard e-store</p>
       </div>
     </>
   );
 };
 
 export default AppointmentCards;
-

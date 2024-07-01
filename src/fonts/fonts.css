@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'Arial';
+  src: url('../fonts/Arial.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ink-Free';
+  src: url('../fonts/Inkfree.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Khand-Bold';
+  src: url('../fonts/Khand-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Khand-Medium';
+  src: url('../fonts/Khand-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Khand-Regular';
+  src: url('../fonts/Khand-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Khand-SemiBold';
+  src: url('../fonts/Khand-SemiBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter-UI-BlackItalic';
+  src: url('../fonts//Inter-Ui-BlackItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

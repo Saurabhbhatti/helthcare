@@ -1,4 +1,10 @@
+@import url('./fonts/fonts.css');
+
 .App {
   text-align: center;
   width: 100%;
+}
+
+body {
+  font-family: 'Arial';
 }

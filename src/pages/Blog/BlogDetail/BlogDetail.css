@@ -1,0 +1,429 @@
+.commpon-background {
+  background: linear-gradient(#d3e4de, #dbeeea);
+}
+.responsive-container {
+  display: flex;
+  justify-content: center;
+}
+.blog-glp-img {
+  width: 400px;
+  height: 450px;
+  object-fit: contain;
+}
+.container-padding {
+  max-width: 2000px;
+}
+
+.blog-header-container {
+  justify-content: space-between;
+  display: flex;
+}
+
+.alignment {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.align-margin {
+  margin-top: 30px;
+  padding-right: 20px;
+}
+.align-padding {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.padding-from-bottom {
+  padding-bottom: 30px;
+}
+.margin-from-top {
+  margin-top: 80px;
+}
+.tirzepatide-margin {
+  margin-top: 100px;
+}
+.heading-style {
+  color: #056887;
+  font-size: 70px;
+  padding-right: 40px;
+  font-family: 'Inter-Ui-BlackItalic';
+  text-transform: uppercase;
+  text-align: right;
+}
+.heading-left {
+  text-align: left;
+  padding-left: 100px;
+}
+.heading-none-text {
+  text-transform: none;
+  text-align: right;
+}
+.discover-blog-contain {
+  justify-content: space-between;
+  display: flex;
+}
+.author-container {
+  justify-content: space-between;
+  display: flex;
+  width: 45%;
+  padding-left: 100px;
+  margin-top: 20px;
+}
+.discover-author-container {
+  justify-content: space-between;
+  display: flex;
+  width: 96%;
+  margin-top: 20px;
+}
+.author-title {
+  font-size: 25px;
+}
+.blog-detail-header {
+  font-family: 'Inter-Ui-BlackItalic';
+  color: #056887;
+  text-align: left;
+  font-size: 40px;
+  margin-top: 50px;
+}
+.blog-detail-contain {
+  font-size: 30px;
+  text-align: left;
+  margin-top: 5px;
+}
+.detail-img {
+  height: 700px;
+  width: 600px;
+  margin-top: 60px;
+  object-fit: fill;
+}
+.mechanism-content {
+  display: flex;
+  flex-direction: row;
+}
+.life-style-text {
+  text-transform: uppercase;
+}
+
+.main-heading {
+  color: #056887;
+  font-size: 30px;
+  font-family: 'Inter-Ui-BlackItalic';
+  text-align: left;
+}
+.semuglutied-offering {
+  color: black;
+  font-size: 15px;
+  text-align: left;
+}
+.sub-heading {
+  color: #056887;
+  font-size: 20px;
+  text-align: left;
+}
+.practical-heading {
+  color: black;
+  font-size: 20px;
+  text-align: left;
+}
+.contain-margin {
+  margin-top: 20px;
+}
+.semugluted-margin {
+  margin-top: 40px;
+}
+
+.mechanism-title {
+  color: #014656;
+  text-align: left;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-family: 'Khand-bold';
+}
+
+.semaglutied-title {
+  font-size: 30px;
+}
+.bio-logical-title {
+  font-size: 35px;
+}
+
+.semaglutied-data-desc {
+  font-size: 30px;
+}
+
+.blog-data-desc {
+  text-align: left;
+  font-size: 25px;
+}
+.mechanism-dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 20px;
+  background-color: #feed00;
+  margin-top: 15px;
+  margin-right: 5px;
+}
+
+.health-disorder-img {
+  width: 100%;
+  height: 800px;
+  object-fit: fill;
+}
+
+.text-overlay-img {
+  position: absolute;
+  top: 10%;
+  padding-left: 40px;
+  text-align: center;
+  font-size: 18px;
+  padding-right: 40px;
+}
+.align-bottom-margin {
+  margin-bottom: 40px;
+}
+
+.blog-image-container {
+  position: relative;
+}
+.health-container {
+  display: flex;
+  justify-content: center;
+  margin: 40px 40px;
+}
+.health-text {
+  background-color: #feed00;
+  padding: 10px;
+  width: 50%;
+  font-size: 25px;
+  border-radius: 10px;
+}
+.contain-margin-bottom {
+  margin-bottom: 20px;
+}
+
+.conclusion-container {
+  background: linear-gradient(white, #eaf6f4);
+  border-radius: 8px;
+  border-width: 1px;
+  border-color: #014656;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.conclusion-title {
+  font-family: 'Khand-Bold';
+  align-self: center;
+  font-size: 28px;
+  padding: 2px 20px;
+  max-width: fit-content;
+  color: white;
+  text-transform: uppercase;
+  background-color: #014656;
+  transform: translateY(-50%) skewX(-10deg);
+}
+.conclusion-desc {
+  font-size: 20px;
+  margin-top: -20px;
+  padding: 10px;
+}
+
+.blog-button {
+  font-family: 'Inter-Ui-BlackItalic';
+  align-self: left;
+  font-size: 18px;
+  padding: 5px 10px;
+  justify-content: flex-start;
+  max-width: fit-content;
+  color: #feed00;
+  text-transform: uppercase;
+  background-color: #014656;
+  cursor: pointer;
+  margin-top: 30px;
+}
+.heading-text-style {
+  color: #014656;
+}
+
+.health-desc-on-img {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: black;
+  padding: 8px 40px;
+  text-align: center;
+  font-size: 18px;
+  justify-content: center;
+  transform: translateY(50%);
+}
+
+.conclusion-section {
+  background: linear-gradient(to top, #d3e4de, #fff);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom: none;
+  border-top: 1px solid gray;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  margin: 50px auto 15px auto;
+  max-width: 95vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.conclusion-section-title {
+  font-family: 'Khand-Bold';
+  font-size: 22px;
+  max-width: fit-content;
+  text-transform: uppercase;
+  padding: 2px 5px;
+  line-height: 1.5;
+  align-self: center;
+  color: white;
+  background-color: #014656;
+  transform: translateY(-50%) skewX(-10deg);
+}
+
+.main-container-padding {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .sub-heading {
+    color: #056887;
+    font-size: 15px;
+    text-align: left;
+  }
+  .health-disorder-img {
+    width: 100%;
+    height: 400px;
+    object-fit: fill;
+  }
+  .heading-style {
+    font-size: 25px;
+    padding-left: 20px;
+  }
+  .author-container {
+    justify-content: space-between;
+    display: flex;
+    width: 60%;
+    padding-left: 40px;
+    margin-top: 20px;
+  }
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+    padding-top: 20px;
+  }
+  .main-container-padding {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .detail-img {
+    height: 30%;
+    width: 60%;
+    /* margin-top: 60px; */
+    object-fit: fill;
+  }
+  .blog-detail-contain {
+    font-size: 15px;
+  }
+  .blog-detail-header {
+    text-align: left;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  .author-title {
+    font-size: 18px;
+  }
+  .main-heading {
+    font-size: 20px;
+  }
+  .mechanism-title {
+    font-size: 20px;
+  }
+  .blog-data-desc {
+    font-size: 15px;
+  }
+  .contain-margin {
+    margin-top: 10px;
+  }
+  .mechanism-dot {
+    height: 8px;
+    width: 8px;
+    border-radius: 20px;
+    background-color: #feed00;
+    margin-top: 10px;
+    margin-right: 5px;
+  }
+  .blog-glp-img {
+    width: 100px;
+    height: 150px;
+  }
+  .blog-button {
+    font-size: 12px;
+    padding: 5px 8px;
+  }
+  .conclusion-title {
+    font-size: 18px;
+    padding: 2px 10px;
+  }
+  .conclusion-desc {
+    font-size: 15px;
+  }
+  .conclusion-container {
+    padding: 20px;
+  }
+  .align-padding {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .health-text {
+    width: 100%;
+    font-size: 20px;
+  }
+  .health-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 20px;
+  }
+  .health-desc-on-img {
+    width: auto;
+    padding: 8px 20px;
+  }
+  .blog-header-container {
+    justify-content: none;
+    display: block;
+  }
+  .alignment {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1500px) {
+  .alignment {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+  .heading-left {
+    text-align: left;
+    padding-left: 140px;
+  }
+  .author-container {
+    padding-left: 140px;
+  }
+  .text-overlay-img {
+    padding-left: 120px;
+  }
+  .align-padding {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}

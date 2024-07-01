@@ -1,0 +1,9 @@
+[
+  { "id": 1, "name": "home", "title": "Home" },
+  { "id": 2, "name": "appointments", "title": "Appointments" },
+  { "id": 3, "name": "OTC-team", "title": "OTC Team" },
+  { "id": 4, "name": "how-it-works", "title": "How It Works" },
+  { "id": 5, "name": "product", "title": "Product" },
+  { "id": 6, "name": "pricing", "title": "Pricing" },
+  { "id": 7, "name": "blog", "title": "Blog" }
+]

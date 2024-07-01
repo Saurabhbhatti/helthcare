@@ -1,0 +1,30 @@
+.home-page-carousel {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #DAEDE9;
+  flex-grow: 1;
+}
+
+.home-page-slider{
+  max-width: 1450px;
+}
+
+.carousel-image {
+  height: 555px;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .carousel-image {
+    height: 450px; 
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-image {
+    height: 300px;
+  }
+}

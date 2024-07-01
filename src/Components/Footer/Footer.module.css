@@ -1,10 +1,9 @@
 .mainfooter {
-  background-color: rgb(9, 55, 31);
-  padding: 20px;
+  background-color: #feed00;
+  padding: 0 20px 20px;
 }
 
 .para {
-  font-family: "Rozha One", serif;
   font-size: 18px;
   color: white;
   line-height: 1.5;
@@ -12,7 +11,6 @@
 }
 
 .paratext {
-  font-family: "Rozha One", serif;
   font-size: 16px;
   color: white;
   line-height: 1.5;
@@ -21,34 +19,112 @@
 
 .footerflex {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
 }
 
 .footerFlexContent {
-  flex: 1;
+  height: 150px;
   max-width: 200px;
   padding: 10px;
+  align-content: end;
+}
+
+.footerTop {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .footerUL {
+  color: black;
   list-style-type: none;
   font-size: 16px;
-  line-height: 2;
+  line-height: 1.5;
   text-align: center;
   padding: 0;
   margin: 0;
+  text-align: left;
 }
 
 a {
   text-decoration: none;
-  color: white;
-  transition: color 0.3s ease, transform 0.3s ease;
+  color: black;
   display: inline-block;
 }
 
-a:hover {
-  color: yellow;
-  transform: scale(1.05);
+.footerSocialFlexContent {
+  width: 100%;
+  margin:0 auto
+}
+
+.footerSocialLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.footerSocialLink {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+.footerSocialLink a:hover {
+  color: black;
+}
+
+.footerOCTLogo {
+  width: 350px;
+  height: 150px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footerLogoText {
+  font-size: 20px;
+}
+
+@media (max-width: 786px) {
+  .footerSocialLinks {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .footerOCTLogo {
+    width: 200px;
+    height: 100px;
+  }
+
+  .footerOCTLogo > img {
+    width: 80px;
+        height: 40px;
+  }
+
+  .footerUL {
+    font-size: 12px;
+  }
+
+  .footerLogoText {
+    font-size: 14px;
+    padding: 0 5px;
+  }
+
+  a {
+    font-size: 12px;
+  }
+
+  .mainfooter {
+    padding: 0 4px 20px;
+  }
 }

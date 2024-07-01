@@ -1,0 +1,9 @@
+export { default as Header } from '../Components/Header/Header';
+export { default as HomePageCarousel } from '../Components/homePageCarousel/HomePageCarousel';
+export { default as HealthDescription } from '../Components/HealthDescription/HelathDescription';
+export { default as ConnectTeam } from '../Components/ConnectTeam/ConnectTeam';
+export { default as Services } from '../Components/Services/Services';
+export { default as BodyInformation } from '../Components/BodyInformation/BodyInformation';
+export { default as Semaglutied } from '../Components/Semaglutide/Semaglutide';
+export { default as Faq } from '../Components/FAQ/Faq';
+export { default as Footer } from '../Components/Footer/Footer';

@@ -1,0 +1,41 @@
+{
+  "sections": [
+    {
+      "title": "BOOK INITIAL ASSESSMENT AND CONSULTATION",
+      "content": "Discuss the patient's weight loss goals, lifestyle factors, dietary habits, physical activity levels, and readiness for treatment."
+    },
+    {
+      "title": "PATIENT EDUCATION AND COUNSELING",
+      "content": "Educate the patient about Compound Semaglutide, its mechanism of action, and its role in weight management."
+    },
+    {
+      "title": "INITIATION OF COMPOUND SEMAGLUTIDE TREATMENT",
+      "content": "Prescribe Compound Semaglutide according to the recommended dosing schedule, typically starting with a low dose and titrating up gradually to the maintenance dose."
+    },
+    {
+      "title": "HOW TO DRAW AND INJECT SEMAGLUTIDE?",
+      "content": [
+        "Semaglutide is administered subcutaneously via a small injection. These injections are only to be administered once a week. ",
+        "PLEASE WATCH THIS HELPFUL YOUTUBE VIDEO",
+        " on how to properly prepare yourself and administer an injection:"
+      ]
+    }
+  ],
+  "instructions": [
+    "Remove plastic safety cap. You can discard this cap.",
+    "Clean top of the vial with an alcohol wipe.",
+    "Hold vial upside down.",
+    "Uncap the syringe (usually orange in color). Syringes are often capped on both ends (needle and plunger side).",
+    "Pierce the rubber top with syringe.",
+    "Pull back on the plunger of syringe and fill to appropriate dose. Please note, the dose on the syringe is in 'units'.",
+    "Clean injection site with alcohol swab.",
+    "Pinch injection area.",
+    "Inject into the pinched area.",
+    "Push plunger to inject medication.",
+    "Remove needle, recap, and dispose of needle."
+  ],
+  "videos": [
+    "https://www.youtube.com/embed/SjrIit0fYgo",
+    "https://www.youtube.com/embed/-8KnAmpXXko"
+  ]
+}

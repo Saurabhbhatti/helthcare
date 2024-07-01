@@ -1,0 +1,6 @@
+.layout-container {
+  display: flex;
+  padding-bottom: 50px;
+  background-color:#DAEDE9;
+  justify-content: center;
+}

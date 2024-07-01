@@ -1,0 +1,90 @@
+@import url('../fonts/fonts.css');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.doctor-bio-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  background: #DAEDE9;
+  padding: 16px;
+}
+
+.doctors-list{
+  max-width: 1450px;
+}
+
+.doctor-bio-card {
+  display: flex;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.image-container {
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+
+.image {
+  width: 180px;
+  height: auto;
+  margin: 0;
+}
+
+.details-container {
+  flex: 1;
+  text-align: left;
+  padding-top: 20px;
+}
+
+.name {
+  font-family: 'Khand-Bold';
+  margin: 0;
+  color: #0a424f;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.bio {
+  font-family: 'Khand-Medium';
+  margin: 0;
+  color: #0a424f;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .doctor-bio-card {
+    flex-direction: column;
+    margin-bottom: 15px; 
+  }
+
+  .image-container {
+    margin-right: 0;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .details-container {
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .name {
+    font-size: 1.3rem;
+  }
+
+  .bio {
+    font-size: 0.9rem;
+  }
+}

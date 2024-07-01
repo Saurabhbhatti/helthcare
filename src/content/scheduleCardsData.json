@@ -1,0 +1,22 @@
+{
+  "scheduleCardsData": [
+    {
+      "imageUrl": "healthcheckIcon",
+      "step": "STEP 1",
+      "heading": "Schedule your health check",
+      "description": "Connect with a healthcare professional through a video call to dive into your medical history and design a persoalizes treatment plan."
+    },
+    {
+      "imageUrl": "medDeliveryIcon",
+      "step": "STEP 2",
+      "heading": "Get your meds delivered",
+      "description": "Recieve your medication conveniently shipped to your door via our telehealth service."
+    },
+    {
+      "imageUrl": "weightLossIcon",
+      "step": "STEP 3",
+      "heading": "Achieve lasting weight loss",
+      "description": "Regularly meet with a medical expert every 1-4 weeks to adjust your medications and ensure your weight loss journey stays on track."
+    }
+  ]
+}

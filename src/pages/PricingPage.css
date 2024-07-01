@@ -1,0 +1,102 @@
+@import url('../fonts/fonts.css');
+
+.container {
+  padding: 20px;
+  text-align: center;
+  background-color: #DAEDE9;
+}
+
+.header {
+  font-family: 'Khand-Bold';
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #004756;
+  text-transform: uppercase;
+}
+
+.plan-table {
+  font-family: 'Khand-Bold';
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px 3px;
+  margin-bottom: 50px;
+  max-width: 800px; 
+  width: 100%; 
+  margin: 0 auto;
+}
+
+.table-row {
+  display: contents;
+}
+
+.table-cell {
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+  /* font-weight: bold; */
+  font-size: 1.5em; 
+  text-align: left;
+}
+
+.cell-center{
+  text-align: center !important;
+}
+
+.no-border {
+  border-bottom: none;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.text-color {
+  color: #13262C;
+}
+
+.attractive-cell {
+  font-family: 'Khand-Medium';
+  background-color: #0F97BD;
+  color: #FFFFFF;
+  font-size: 1.375em; 
+  text-align: left;
+  padding-left: 10px;
+}
+
+.weeks-cell {
+  font-family: 'Khand-Medium';
+  background-color: #014656;
+  color: #FFFFFF;
+  font-size: 1.375em; 
+  text-align: left;
+  padding-left: 10px;
+}
+
+.rounded-cell {
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+@media (max-width: 768px) {
+  .plan-table {
+    grid-template-columns: 1fr;
+    gap: 15px; 
+    max-width: 100%; 
+    width: 300px; 
+    padding: 0 5px; 
+  }
+
+  .table-cell {
+    font-size: 1.25em; 
+    padding: 8px;
+    text-align: center;
+  }
+
+  .align-right {
+    text-align: left;
+  }
+
+  .rounded-cell {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}

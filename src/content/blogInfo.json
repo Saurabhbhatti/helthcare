@@ -1,0 +1,39 @@
+[
+  {
+    "id": "1",
+    "img": "Breakthroughs_Weight_Loss",
+    "title": "Game-Changing Weight Loss Breakthroughs",
+    "description": "Inside Scoop on Semaglutide & Tirzepatide from OTC Body Weight Loss Program",
+    "author": "OTC-BODY",
+    "date": "May 24,2024",
+    "slug": "game-blog"
+  },
+  {
+    "id": "2",
+    "img": "Glp",
+    "title": "Why Doesn’t Semaglutide Work for Me?",
+    "description": "Comprehensive Guide",
+    "author": "OTC-BODY",
+    "date": "May 24,2024",
+    "slug": "glp-blog"
+  },
+
+  {
+    "id": "3",
+    "img": "Semaglutied_Weight_Loss",
+    "title": "Discover How semaglutide Transforms Your Body for Weight Loss",
+    "description": "Discover How Segmaglutide Transforms Your Body for Weight Loss",
+    "author": "OTC-BODY",
+    "date": "May 24,2024",
+    "slug": "semaglutied-blog"
+  },
+  {
+    "id": "2",
+    "img": "Glp",
+    "title": "Why Doesn’t Semaglutide Work for Me?",
+    "description": "Comprehensive Guide",
+    "author": "OTC-BODY",
+    "date": "May 24,2024",
+    "slug": "glp-blog"
+  }
+]

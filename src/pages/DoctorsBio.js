@@ -1,127 +1,60 @@
-import React, { useState, useEffect } from "react";
-import { Typography, Container, Grid, Paper, Box, CircularProgress } from "@mui/material";
-import { styled } from "@mui/system";
-import Header from "../Components/Header/Header";
-import Footer from "../Components/Footer/Footer";
-import doctor1 from "../Assets/Image/Dr.Mehta.jpg";
-import doctor2 from "../Assets/Image/Dr. Schubhe.jpg";
-import doctor3 from "../Assets/Image/img2.jpg";
-import doctor4 from "../Assets/Image/img3.jpg";
-import doctor5 from "../Assets/Image/img4.jpg";
+import React from "react";
+import { Header, Footer } from '../Components/index'; 
+import { teamContent } from "../helper/content";
+import {
+  DR_PRATIK_MEHTA,
+  DR_SCHUBE,
+  JAIMEE_USSERY,
+  USER_PLACEHOLDER,
+  DAWN_M_COSTON,
+} from "../helper/assets";
+import "./DoctorBio.css";
 
-const ContainerStyled = styled(Box)(({ theme }) => ({
-  minHeight: "100vh",
-  display: "flex",
-  flexDirection: "column",
-}));
-
-const ContentStyled = styled(Box)(({ theme }) => ({
-  flex: "1 0 auto",
-}));
-
-const FooterStyled = styled(Footer)(({ theme }) => ({
-  flexShrink: 0,
-}));
-
-const DoctorBio = React.memo(({ name, photoUrl, bio }) => (
-  <Paper
-    elevation={3}
-    sx={{
-      display: "flex",
-      flexDirection: { xs: "column", sm: "row" },
-      alignItems: "center",
-      mb: 4,
-      p: 2,
-    }}
-  >
-    <Box sx={{ flexShrink: 0, mb: { xs: 2, sm: 0 } }}>
+const DoctorBioCard = ({ name, photoUrl, bio }) => (
+  <div className="doctor-bio-card">
+    <div className="image-container">
       <img
         src={photoUrl}
         alt={name}
         loading="lazy"
-        style={{ width: 150, height: 200, borderRadius: 8, objectFit: "cover" }}
+        aria-label={`Photo of ${name}`}
+        className="image"
       />
-    </Box>
-    <Box
-      sx={{
-        ml: { sm: 2 },
-        textAlign: { xs: "center", sm: "left" },
-        fontFamily: '"rozha one", serif',
-      }}
-    >
-      <Typography variant="h5" component="h2" sx={{ mb: 1 }}>
-        {name}
-      </Typography>
-      <Typography variant="body1" component="p">
-        {bio}
-      </Typography>
-    </Box>
-  </Paper>
-));
+    </div>
+    <div className="details-container">
+      <h2 className="name">{name}</h2>
+      <p className="bio">{bio}</p>
+    </div>
+  </div>
+);
 
-const doctors = [
-  {
-    name: "Dr. Mehta",
-    photoUrl: doctor1,
-    bio: "Dr. Mehta attended Georgia State University where he graduated with a degree in Microbiology and Immunology. Afterwards, he attended Medical College of Wisconsin and then completed a residency at Resurrection Medical Center in Chicago. Dr. Mehta moved back to the metro Atlanta area and began focusing his efforts on treating his patients' overall health needs.",
-  },
-  {
-    name: "Dr. Schube",
-    photoUrl: doctor2,
-    bio: "Dr. Schube graduated from The University of Georgia with a Bachelors of Science and then attended Tel Aviv University Sackler School of Medicine where he earned his Medical Degree. After completing residency training at New York Medical College Metropolitan Hospital, he moved back home to the metro Atlanta area to care for the community and raise a family.",
-  },
-  {
-    name: "Jaimee Ussery, MSN, FNP-BC",
-    photoUrl: doctor3,
-    bio: "Jaimee Ussery is a board-certified Family Nurse Practitioner with a Master’s Degree in Nursing from South University. Specializing in family medicine, she holds certification from the American Academy of Nurse Practitioners (AANP) and is currently advancing her expertise by pursuing a certification in Psychiatric Mental Health. With over a decade of experience in cardiovascular health, Jaimee has developed a deep understanding of caring for diverse patient populations. Outside of her professional life, she enjoys traveling, reading, and cherishing moments with her family.",
-  },
-  {
-    name: "Sandy Ndetah, MSN, FNP-BC",
-    photoUrl: doctor4,
-    bio: "Sandrine Ndetah earned her Bachelor of Science in Nursing at the University of New Hampshire before advancing her education with a Master of Science in Nursing, specializing in Family Nurse Practitioner (FNP), at the University of North Dakota. Since 2020, she has worked as an FNP, finding fulfillment in providing care to patients of diverse backgrounds.",
-  },
-  {
-    name: "Dawn M. Coston, CRNP",
-    photoUrl: doctor5,
-    bio: "Dawn M. Coston is a native of Muskegon, Michigan. She has lived in Birmingham, Alabama since 1993. She received her bachelor’s degree in Nursing from the University of Alabama in Huntsville. She completed a master’s degree in Nursing at the University of Alabama at Birmingham in 2003. She is board certified as an Adult Health Nurse Practitioner with the American Academy of Nurse Practitioners. She has practiced in the field of Nephrology since 2007. Her professional memberships include the American Academy of Nurse Practitioners, National Key Foundation, Renal Professionals Association, and Renal Physicians Association.",
-  },
-];
-
-const DoctorApp = () => {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 1000);
-  }, []);
+const DoctorBio = () => {
+  const doctorImages = {
+    DR_PRATIK_MEHTA,
+    DR_SCHUBE,
+    JAIMEE_USSERY,
+    USER_PLACEHOLDER,
+    DAWN_M_COSTON,
+  };
 
   return (
-    <ContainerStyled>
+    <div className="doctor-bio-container">
       <Header />
-      <ContentStyled>
-        <Container sx={{ py: 4 }}>
-          <Typography variant="h4" component="h1" align="center" sx={{ mb: 4 }}>
-            Our Team
-          </Typography>
-          {loading ? (
-            <Box sx={{ display: 'flex', justifyContent: 'center', my: 4 }}>
-              <CircularProgress />
-            </Box>
-          ) : (
-            <Grid container spacing={4}>
-              {doctors.map((doctor, index) => (
-                <Grid item xs={12} key={index}>
-                  <DoctorBio {...doctor} />
-                </Grid>
-              ))}
-            </Grid>
-          )}
-        </Container>
-      </ContentStyled>
-      <FooterStyled />
-    </ContainerStyled>
+      <main className="content">
+        <div className="doctors-list">
+          {teamContent.doctors.map((doctor, index) => (
+            <DoctorBioCard
+              key={index}
+              name={doctor.name}
+              photoUrl={doctorImages[doctor.photoUrl]}
+              bio={doctor.bio}
+            />
+          ))}
+        </div>
+      </main>
+      <Footer />
+    </div>
   );
 };
 
-export default React.memo(DoctorApp);
+export default DoctorBio;

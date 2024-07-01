@@ -1,14 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react';
 
 const AppointmentRequestWidget = (props) => {
   const { initialScopeId, initialScopeUrl, initialApplicationId } = props;
   const [scopeId, setScopeId] = useState(initialScopeId);
   const [scopeUrl, setScopeUrl] = useState(initialScopeUrl);
   const [applicationId, setApplicationId] = useState(initialApplicationId);
+
   useEffect(() => {
-    const script = document.createElement("script");
+    const script = document.createElement('script');
     script.src =
-      "https://widget-cdn.simplepractice.com/assets/integration-1.0.js";
+      'https://widget-cdn.simplepractice.com/assets/integration-1.0.js';
     script.async = true;
     document.body.appendChild(script);
 
@@ -22,32 +23,26 @@ const AppointmentRequestWidget = (props) => {
       <style>{`
           .spwidget-button-wrapper {
             text-align: center;
+            width: fit-content;
           }
           .spwidget-button {
             display: inline-block;
-            padding: 10px 18px;
-            color: #fff !important;
-            background: #3D768A;
+            padding: 5px 18px;
+            color: #034651 !important;
+            background: #feed00;
+            font-family:Inter-UI-BlackItalic; 
             border: 0;
             border-radius: 4px;
-            font-size: 12px;
-            font-weight: 600;
+            font-size: 16px;
             text-decoration: none;
+            width: 150px;
+            letter-spacing: 1px;
           }
-          .spwidget-button:hover {
-            background-color: white;
-            color: black !important;
-            transition: all 0.2s ease, visibility 0s;
-          }
-          {/* .spwidget-button:active {
-            color: rgba(255, 255, 255, 0.75) !important;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
-          } */}
         `}</style>
-      <div className="spwidget-button-wrapper">
+      <div className='spwidget-button-wrapper'>
         <a
-          href="https://offthecharts.clientsecure.me"
-          className="spwidget-button"
+          href='https://offthecharts.clientsecure.me'
+          className='spwidget-button'
           data-spwidget-scope-id={scopeId}
           data-spwidget-scope-uri={scopeUrl}
           data-spwidget-application-id={applicationId}

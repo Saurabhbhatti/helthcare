@@ -1,0 +1,103 @@
+@import url('../fonts/fonts.css');
+
+.container {
+    background-color: #DAEDE9;
+}
+
+.section {
+    background-color: #EAF6F4;
+    border-radius: 8px;
+    border-top: none;
+    border-bottom: 1px solid #000;
+    box-shadow: 0px 6px 8px -2px rgba(0, 0, 0, 0.5);
+    padding: 0 15px;
+    margin: 0 auto 15px auto;
+    max-width: 90vw;
+}
+
+.section-title {
+    font-family: 'Khand-Bold';
+    font-size: 22px;
+    max-width: 90vw;
+    line-height: 1.5;
+    margin: 0 auto 15px auto;
+    color: #FDEC06;
+    background-color: #014656;
+    border-radius: 6px;
+}
+
+.section p {
+    font-size: 20px;
+    font-family: 'Khand-Medium';
+}
+
+.arrow-container {
+    margin: 8px 0;
+}
+
+.arrow {
+    width: 25px;
+    padding: 10px 0;
+}
+
+.youtube {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.youtube-box {
+    color: #ffffff;
+    padding: 8px 15px;
+    margin: 0 8px;
+    cursor: pointer;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.youtube-box iframe {
+    width: 100%;
+    height: 100%;
+    border: none; 
+    border-radius: 30px;
+}
+
+.instructions {
+    font-family: 'Khand-Medium';
+    font-size: 20px;
+    text-align: left;
+    list-style-type: none;
+    padding: 0;
+    max-width: 700px;
+    margin: 0 auto 15px auto;
+    color: #014656;
+}
+
+.instruction-item {
+    display: flex;
+    margin-bottom: 8px;
+    padding-left: 35px;
+    align-items: center;
+    background-size: 20px;
+}
+
+.right-tick-img {
+    width: 20px;
+    height: 20px;
+    margin: 4px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .section {
+        max-width: 750px;
+    }
+
+    .section-title {
+        max-width: 600px;
+    }
+}

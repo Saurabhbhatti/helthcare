@@ -1,29 +1,36 @@
-import React, { useEffect, useRef, lazy, Suspense } from 'react';
+import React from "react";
+import "../Appoinments/Appoinment.css";
 
-const Header = lazy(() => import('../Header/Header'));
-const Footer = lazy(() => import('../Footer/Footer'));
-const Faq = lazy(() => import('../FAQ/Faq'));
-const AppoinmentCards = lazy(() => import('./AppoinmentCard'));
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
+import AppoinmentCards from "./AppoinmentCard";
+import Schedule from "../ScheduleCard/Schedule";
+import { connectIcon } from "../../helper/assets";
+import AppoinmentFaq from "./AppoinmentFaq";
 
 const BookAppointment = () => {
-  const nurseSectionRef = useRef(null);
-
-  useEffect(() => {
-    if (nurseSectionRef.current) {
-      nurseSectionRef.current.scrollIntoView({ behavior: 'smooth' });
-    }
-  }, []);
 
   return (
     <>
-      <Suspense fallback={<div>Loading...</div>}>
-        <Header />
-        <div ref={nurseSectionRef} id="nurse-section">
-          <AppoinmentCards />
+      <Header />
+      <div id="nurse-section">
+        <div className="user-icon-container">
+          <img
+            src={connectIcon}
+            alt="userIcon"
+            width={"40px"}
+            height={"30px"}
+            className="user-icon"
+          />
         </div>
-        <Faq />
-        <Footer />
-      </Suspense>
+        <h1 className="paragraph-heading-booking">
+          <span>Connect with Our Experienced Team</span>
+        </h1>
+        <AppoinmentCards />
+        <Schedule />
+      </div>
+      <AppoinmentFaq/>
+      <Footer />
     </>
   );
 };

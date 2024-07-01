@@ -1,0 +1,56 @@
+.practioner-main-container {
+  background-color: #cdded8;
+  padding: 50px 0;
+}
+
+.practioner-card-img {
+  border: 10px solid yellow;
+  box-shadow: 1px 1px 5px gray;
+}
+
+.card-main {
+  height: auto;
+  width: auto;
+}
+
+.card-name {
+  font-family: 'Khand-SemiBold';
+  margin-top: 4px;
+  font-size: 28px;
+  text-transform: uppercase;
+  line-height: 30px;
+  color: #074b5b;
+}
+
+.card-post {
+  font-family: 'Khand-Medium';
+  font-size: 22px;
+  color: #1d728b;
+}
+
+.card-main > .card-desc {
+  font-family: 'Khand-SemiBold';
+  font-size: 17px;
+  text-transform: uppercase;
+  width: fit-content;
+  margin: 0 auto;
+  color: #265831;
+  padding: 1px 5px;
+  font-weight: 700;
+}
+
+@media (max-width: 786px) {
+  .practioner-main-container {
+    padding: 30px 0;
+  }
+
+  .practioner-container > .card-main {
+    width: 250px;
+    height: 250px;
+  }
+
+  .card-img {
+    width: 150px;
+    height: 150px;
+  }
+}
