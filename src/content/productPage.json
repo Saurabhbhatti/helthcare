@@ -1,49 +1,42 @@
 {
   "products": [
     {
-      "backgroundImage": "CARD_BACKGROUND",
       "productImage": "GLP_1",
       "productName": "Discover How Semaglutide Transforms Your Body for Weight Loss",
       "productDescription": "Semaglutide belongs to the GLP-1 (glucagon-like peptide-1) class of medications. GLP-1 is a hormone your body produces in response to food. This hormone interacts with receptors in the pancreas, intestines, heart, brain, and more. Semaglutide mimics this natural hormone, being 94% similar to the GLP-1 your body produces.",
       "startJourny": "Starting at just : $199/1ML | $375/2ML | $700/5ML"
     },
     {
-      "backgroundImage": "CARD_BACKGROUND",
       "productImage": "TIZEPATIDE",
       "productName": "OTC Compound TZ for Weightloss",
       "productDescription": "Compound Tirzepatide is a weekly injection that can help lower blood glucose and aid in weight loss. 1. It works by decreasing appetite and slowing the movement of food from the stomach into the small intestine, which may make you feel full more quickly and for a longer period of time. 2. Tirzepatide mimics the effects of natural hormones that regulate appetite and food intake, and targets areas of the brain involved in appetite regulation, leading to reduced hunger and increasedfeelings of fullness.",
       "startJourny": "Starting at just : $275/1ML | $400/2ML | $550/3ML"
     },
     {
-      "backgroundImage": "CARD_BACKGROUND",
       "productImage": "SILDENATIL_TABLETS_USP",
       "productName": "OTC MensRX",
       "productDescription": "Sildenafil (Viagra) is taken by mouth to treat erectile dysfunction (ED). You take it only as needed, typically about an hour before sexual activity (but you can take it anywhere between 30 minutes to 4 hours before sex). Don't take sildenafil (Viagra) more than once a day because doing so can put you at higher risk for serious side effects, such as vision loss or low blood pressure.",
       "startJourny": "Start your journey toady  @just $180"
     },
     {
-      "backgroundImage": "CARD_BACKGROUND",
       "productImage": "SCREAM_CREAM",
       "productName": "OTC WomensRX",
       "productDescription": "Industry term is 'scream cream' is prescription Compounded medication made by compounding pharmacies that aim to enhance the female sexual experience.This doesn't necessarily treat your libido, but if find you aren't in the mood as much because of blood flow issues or lack of sensitivity and stimulation, this may help you out.These creams normally contain a mixture of ingredients known to help enhance blood flow or sensitivity when applied to the clitoral area.",
       "startJourny": "Start your journey today @just$78"
     },
     {
-      "backgroundImage": "CARD_BACKGROUND",
       "productImage": "NAD",
       "productName": "OTC NAD Cream",
       "productDescription": "NAD+ has been found to promote the production of peptides that work together to form stronger, more elastic, moisturized and hydrated-looking stratum corneum, the outermost layer of skin. Research on the relationship between skin and collagen supplementation concluded that collagen peptides have the power to either “reduce[s] or delay[s] skin aging“. Furthermore, the science suggested that topical use of NAD+ improved the appearance of wrinkles and elasticity in the skin.",
       "startJourny": "Starting at just : 30 days @$99 | 60 days @$180"
     },
     {
-      "backgroundImage": "CARD_BACKGROUND",
       "productImage": "SEMAGLUTIDE_TABLETS",
       "productName": "OTC Oral Semaglutide",
       "productDescription": "The once-daily 50mg tablet formulation of this GLP-1 receptor agonist is among the nearest to approval. The formulation was studied for weight loss in individuals with overweight/obesity in the OASIS 1 phase 3a trial. When applying the treatment policy estimands (defined as the treatment effect regardless of adherence), people who took the pill achieved a weight loss of 15.1% over 68 weeks compared with a 2.4% reduction with place, and 84.9% achieved a weight loss of ≥ 5% vs 25.8% with place.",
       "startJourny": "Start your journey today  @just $249"
     },
     {
-      "backgroundImage": "CARD_BACKGROUND",
       "productImage": "RECAP_HAIR",
       "productName": "OTC Hair Treatment Program",
       "productDescription": "OTC 3 in 1 hair treatment brings together three ingredients to combat hair loss. Finasteride helps to slow hair loss, Minoxidil to promote hair regrowth and Tretinoin to allow the scalp to easily aborb the other active ingredient for improved results.",

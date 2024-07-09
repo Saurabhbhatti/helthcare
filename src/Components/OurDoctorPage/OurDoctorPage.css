@@ -1,13 +1,13 @@
-.Main-container{
+.Main-container {
+  max-width: 1450px;
   width: 100%;
-  height: 100%;
   text-align: center;
 }
 
 .Container {
   display: flex;
   flex-direction: column;
-  font-family: "rozha one", serif;
+  font-family: 'rozha one', serif;
   width: 100%;
   transition: background-color 0.5s;
 }

@@ -11,6 +11,16 @@ export { default as SHEDULE_BACKGROUND_IMG } from "../Assets/appointmentAssets/s
 export { default as OtcBodyLogo } from '../Assets/Home/otc-body-logo.jpg';
 export { default as OTC_NEW_LOGO } from '../Assets/Home/otc-new-logo.png';
 export { default as HomeBanner } from '../Assets/Home/home-banner.jpg';
+// SLIDER IMAGE
+export { default as HOME_SLIDER_SEMAGLUTIDE } from '../Assets/Home/home-slider-sameglutide.jpg';
+export { default as OTC_ORAL_SEMAGLUTIDE } from '../Assets/Home/otc-oral-semaglutide.jpg';
+export { default as OTC_NAD_CREAM } from '../Assets/Home/otc-nad-cream.jpg';
+export { default as OTC_WOMENS_RX } from '../Assets/Home/otc-womens-rx.jpg';
+export { default as OTC_MENS_RX } from '../Assets/Home/otc-mens-rx.jpg';
+export { default as OTC_COMPOUND_TZ } from '../Assets/Home/otc-comppund-tz.jpg';
+export { default as OTC_HAIR_TREATMENT } from '../Assets/Home/otc-hair-treatment.jpg';
+export { default as SEMAGLUTIDE_TRANDORM } from '../Assets/Home/semaglutide-tranform.jpg';
+
 export { default as UserIcon } from '../Assets/Home/user-icon.png';
 export { default as ServiceIcon } from '../Assets/Home/service-icon.png';
 export { default as DR_JAIMEE_USSERY } from '../Assets/Home/jaimee-ussery.jpg';
@@ -36,6 +46,7 @@ export { default as MANAGED_WIGHT_LOSS_PROGRAM } from '../Assets/Home/managed-we
 export { default as DR_PRATIK_MEHTA } from '../Assets/OurTeam/dr-pratik-mehta.png';
 export { default as DR_SCHUBE } from '../Assets/OurTeam/dr-schube.png';
 export { default as JAIMEE_USSERY } from '../Assets/OurTeam/jaimee-ussery.png';
+export { default as TERESA_RICE } from '../Assets/OurTeam/teresa-rice.jpg';
 export { default as DAWN_M_COSTON } from '../Assets/OurTeam/dawn-m-coston.png';
 
 // Pricing Assets
@@ -59,5 +70,4 @@ export { default as SCREAM_CREAM } from '../Assets/ProductPage/scream-cream.png'
 export { default as NAD } from '../Assets/ProductPage/nad.png';
 export { default as SEMAGLUTIDE_TABLETS } from '../Assets/ProductPage/semaglutide-tablets.png';
 export { default as RECAP_HAIR } from '../Assets/ProductPage/recap-hair.png';
-export { default as CARD_BACKGROUND } from '../Assets/ProductPage/card-backgroud.png';
 export { default as NO_HIDDEN_CHARGES } from '../Assets/ProductPage/no-hidden-charges.png';

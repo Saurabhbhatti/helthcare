@@ -10,8 +10,7 @@ const DiscoverHeading = () => {
         <br /> for Weight Loss
       </div>
 
-      <div className='discover-author-container'>
-        <div style={{ width: '50%' }}></div>
+      <div className='blog-author-container'>
         <div className='author-title'>By OTC-BODY</div>
         <div className='author-title'>May 2, 2024</div>
       </div>

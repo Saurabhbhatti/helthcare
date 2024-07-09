@@ -1,5 +1,10 @@
 @import url('../fonts/fonts.css');
 
+.pricing-container{
+  width: 100%;
+  max-width: 1450px;
+}
+
 .container {
   padding: 20px;
   text-align: center;

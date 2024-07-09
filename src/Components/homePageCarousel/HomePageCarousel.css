@@ -6,10 +6,6 @@
   flex-grow: 1;
 }
 
-.home-page-slider{
-  max-width: 1450px;
-}
-
 .carousel-image {
   height: 555px;
   display: block;

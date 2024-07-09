@@ -1,29 +1,28 @@
-import React from "react";
-import { Header, Footer } from '../Components/index'; 
-import { teamContent } from "../helper/content";
+import React from 'react';
+import { teamContent } from '../helper/content';
 import {
   DR_PRATIK_MEHTA,
   DR_SCHUBE,
   JAIMEE_USSERY,
   USER_PLACEHOLDER,
   DAWN_M_COSTON,
-} from "../helper/assets";
-import "./DoctorBio.css";
+} from '../helper/assets';
+import './DoctorBio.css';
 
 const DoctorBioCard = ({ name, photoUrl, bio }) => (
-  <div className="doctor-bio-card">
-    <div className="image-container">
+  <div className='doctor-bio-card'>
+    <div className='image-container'>
       <img
         src={photoUrl}
         alt={name}
-        loading="lazy"
+        loading='lazy'
         aria-label={`Photo of ${name}`}
-        className="image"
+        className='image'
       />
     </div>
-    <div className="details-container">
-      <h2 className="name">{name}</h2>
-      <p className="bio">{bio}</p>
+    <div className='details-container'>
+      <h2 className='name'>{name}</h2>
+      <p className='bio'>{bio}</p>
     </div>
   </div>
 );
@@ -38,10 +37,9 @@ const DoctorBio = () => {
   };
 
   return (
-    <div className="doctor-bio-container">
-      <Header />
-      <main className="content">
-        <div className="doctors-list">
+    <div className='doctor-bio-container'>
+      <main className='content'>
+        <div className='doctors-list'>
           {teamContent.doctors.map((doctor, index) => (
             <DoctorBioCard
               key={index}
@@ -52,7 +50,6 @@ const DoctorBio = () => {
           ))}
         </div>
       </main>
-      <Footer />
     </div>
   );
 };

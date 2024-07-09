@@ -1,5 +1,10 @@
 @import url('../fonts/fonts.css');
 
+.how-it-work-container{
+    width: 100%;
+    max-width: 1450px;
+}
+
 .container {
     background-color: #DAEDE9;
 }

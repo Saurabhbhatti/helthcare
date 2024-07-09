@@ -9,7 +9,6 @@ import {
   Semaglutied_Weight_Loss,
 } from '../helper/assets';
 import { useNavigate } from 'react-router-dom';
-import Background from './Blog/BlogDetail/Background';
 
 const BlogPage = () => {
   const navigate = useNavigate();
@@ -33,10 +32,9 @@ const BlogPage = () => {
   };
 
   return (
-    <Background>
-      <Header />
+    <div className='blog-main-container'>
+      <div className='blog-heading'>Latest Blogs</div>
       <div className='latest-blog-container'>
-        <div className='blog-heading'>Latest Blogs</div>
         <div className='blog-card'>
           {blogInfo.map((blog, index) => (
             <div key={index} className='blog-group'>
@@ -54,8 +52,7 @@ const BlogPage = () => {
           ))}
         </div>
       </div>
-      <Footer />
-    </Background>
+    </div>
   );
 };
 

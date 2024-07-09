@@ -1,6 +1,5 @@
-@import url('../fonts/fonts.css');
-
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -16,11 +15,11 @@ html, body {
   display: flex;
   justify-content: center;
   flex: 1;
-  background: #DAEDE9;
+  background: #daede9;
   padding: 16px;
 }
 
-.doctors-list{
+.doctors-list {
   max-width: 1450px;
 }
 
@@ -66,7 +65,7 @@ html, body {
 @media (max-width: 768px) {
   .doctor-bio-card {
     flex-direction: column;
-    margin-bottom: 15px; 
+    margin-bottom: 15px;
   }
 
   .image-container {

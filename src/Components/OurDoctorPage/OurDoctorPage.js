@@ -15,15 +15,13 @@ import {
 const OurDoctorPage = () => {
   return (
     <div className='Main-container'>
-      <Header />
       <HomePageCarousel />
       <HealthDescription />
       <ConnectTeam />
       <Services />
       <Semaglutied />
-      <BodyInformation/>
+      <BodyInformation />
       <Faq />
-      <Footer />
     </div>
   );
 };

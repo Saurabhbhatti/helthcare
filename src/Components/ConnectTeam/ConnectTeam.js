@@ -4,7 +4,7 @@ import {
   DR_JAIMEE_USSERY,
   DR_DAWN_COSTON,
   UserIcon,
-  USER_PLACEHOLDER
+  TERESA_RICE 
 } from "../../helper/assets";
 import DocInformation from "./DocInformation/DocInformation";
 import { docInfo } from "../../helper/content";
@@ -13,7 +13,7 @@ const ConnectTeam = () => {
   const doctorImages = {
     DR_JAIMEE_USSERY,
     DR_DAWN_COSTON,
-    USER_PLACEHOLDER
+    TERESA_RICE
   };
 
   return (

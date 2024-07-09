@@ -1,7 +1,6 @@
 .body-info-container {
   position: relative;
-  max-width: 1450px;
-  width: 100vw;
+  width: 100%;
   background-color: #cdded8;
   overflow: hidden;
 }

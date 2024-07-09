@@ -2,13 +2,9 @@ import React, { useState, useEffect } from "react";
 import "./ProductPage.css";
 import * as assets from "../helper/assets";
 import productsData from "../content/productPage.json";
-import { Header, Footer } from "../Components/index";
 
 const ProductCard = ({ product }) => (
-  <div
-    className="product-card"
-    style={{ backgroundImage: `url(${assets[product.backgroundImage]})` }}
-  >
+  <div className="product-card">
     <div className="card-content">
       <div className="left-side">
         <img
@@ -36,22 +32,20 @@ const ProductPage = () => {
   }, []);
 
   return (
-    <>
-      <Header />
+    <div>
       <div className="product-container">
         <div className="product-container-img">
-          <img
-            src={assets.NO_HIDDEN_CHARGES}
-            alt="Top Image"
-            className="top-image"
-          />
           {products.map((product, index) => (
             <ProductCard key={index} product={product} />
           ))}
+          <div className="banner-container">
+            <p className="banner-text">
+              NO HIDDEN CHARGES<span className="asterisk">*</span>
+            </p>
+          </div>
         </div>
       </div>
-      <Footer />
-    </>
+    </div>
   );
 };
 

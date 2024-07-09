@@ -10,7 +10,6 @@
 
 .service-icon-container {
   display: flex;
-  max-width: 1450px;
   justify-content: center;
   background-color: #feed00;
   border-radius: 50%;

@@ -9,20 +9,77 @@ import Pricing from './pages/Pricing';
 import ProductPage from './pages/ProductPage';
 import Blog from './pages/BlogPage';
 import BlogDetail from './pages/BlogDetail';
+import Layout from './Components/Layout';
 
 function App() {
   return (
     <div className='App'>
       <Router>
         <Routes>
-          <Route path='/' element={<OurDoctorPage />} />
-          <Route path='/home' element={<OurDoctorPage />} />
-          <Route path='/how-it-works' element={<HowItWorks />} />
-          <Route path='/appointments' element={<BookAppointment />} />
-          <Route path='/otc-team' element={<DoctorsBio />} />
-          <Route path='/product' element={<ProductPage />} />
-          <Route path='/pricing' element={<Pricing />} />
-          <Route path='/blog' element={<Blog />} />
+          <Route
+            path='/'
+            element={
+              <Layout>
+                <OurDoctorPage />
+              </Layout>
+            }
+          />
+          <Route
+            path='/home'
+            element={
+              <Layout>
+                <OurDoctorPage />
+              </Layout>
+            }
+          />
+          <Route
+            path='/appointments'
+            element={
+              <Layout>
+                <BookAppointment />
+              </Layout>
+            }
+          />
+          <Route
+            path='/otc-team'
+            element={
+              <Layout>
+                <DoctorsBio />
+              </Layout>
+            }
+          />
+          <Route
+            path='/how-it-works'
+            element={
+              <Layout>
+                <HowItWorks />
+              </Layout>
+            }
+          />
+          <Route
+            path='/product'
+            element={
+              <Layout>
+                <ProductPage />
+              </Layout>
+            }
+          />
+          <Route
+            path='/pricing'
+            element={
+              <Layout>
+                <Pricing />
+              </Layout>
+            }
+          />
+          <Route
+            path='/blog'
+            element={
+              <Layout>
+                <Blog />
+              </Layout>
+            }
+          />
           <Route path='/blog/:slug' element={<BlogDetail />} />
         </Routes>
       </Router>

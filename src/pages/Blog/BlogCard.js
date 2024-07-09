@@ -23,9 +23,8 @@ const BlogCard = ({
             <div className='blog-overlay-text'>{description}</div>
 
             <div className='blog-dicover-meta-contain'>
-              <div className='blog-discover-meta'>
-                <div className='discover-blog-meta'>By {author}</div>
-              </div>
+              <div className='discover-blog-meta'>By {author}</div>
+
               <div className='discover-blog-meta'>{date}</div>
             </div>
             <div className='read-more-discover' onClick={onClick}>

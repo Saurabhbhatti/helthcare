@@ -21,8 +21,7 @@ const Arrow = () => (
 
 const HowItWorksPage = () => {
   return (
-    <>
-      <Header />
+    <div className='how-it-work-container'>
       <div className='container'>
         {data.sections.map((section, index) => (
           <React.Fragment key={index}>
@@ -64,8 +63,7 @@ const HowItWorksPage = () => {
           </p>
         </Section>
       </div>
-      <Footer />
-    </>
+    </div>
   );
 };
 
